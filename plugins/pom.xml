@@ -67,8 +67,8 @@
     </distributionManagement>
 
     <modules>
-        <module>../xdoclet-maven-plugin</module>
-        <module>../maven-antrun-plugin</module>
+        <!--<module>../xdoclet-maven-plugin</module>-->
+        <!--<module>../maven-antrun-plugin</module>-->
         <module>../dashboard-plugin</module>
         <module>../simian-report-maven-plugin</module>
     </modules>
