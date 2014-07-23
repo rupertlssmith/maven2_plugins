@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<changelog>
+
+<changeset datePattern="yyyyMMdd HH:mm:ss z" start="20070529 12:24:48 CEST" end="20070629 12:24:48 CEST">
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-05-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[jvanerp]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardUtil.java</name>
+            <revision>71</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/NcssDashboardReport.java</name>
+            <revision>71</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/PmdDashboardReport.java</name>
+            <revision>71</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/JDependDashboardReportTest.java</name>
+            <revision>71</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/NcssDashboardReportTest.java</name>
+            <revision>71</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/PmdDashboardReportTest.java</name>
+            <revision>71</revision>
+        </file>
+        <msg><![CDATA[Increased coverage, cleaned up
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-02</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[lvonk]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/pom.xml</name>
+            <revision>72</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/CoberturaDashboardReport.java</name>
+            <revision>72</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/CoberturaDashboardReportTest.java</name>
+            <revision>72</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/resources/coverage.xml</name>
+            <revision>72</revision>
+        </file>
+        <msg><![CDATA[- Added dashboard to pom.
+- Externalized site url with default value
+- fixed percentage in cobertura report.
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-04</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[lvonk]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/pom.xml</name>
+            <revision>73</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/CoberturaDashboardReport.java</name>
+            <revision>73</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/Cell.java</name>
+            <revision>73</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/Row.java</name>
+            <revision>73</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/Table.java</name>
+            <revision>73</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/CoberturaDashboardReportTest.java</name>
+            <revision>73</revision>
+        </file>
+        <msg><![CDATA[- finished implementing cobertura
+
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-05</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[lvonk]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/doc</name>
+            <revision>74</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/doc/bugcollection.xsd</name>
+            <revision>74</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/FindBugsDashboardReport.java</name>
+            <revision>74</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/FindBugsDashboardReportTest.java</name>
+            <revision>74</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/resources/findbugs.xml</name>
+            <revision>74</revision>
+        </file>
+        <msg><![CDATA[Started implementing the FindBugs report.
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-12</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[jvanerp]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/pom.xml</name>
+            <revision>75</revision>
+        </file>
+        <msg><![CDATA[added myself as developer
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-19</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[jvanerp]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/pom.xml</name>
+            <revision>76</revision>
+        </file>
+        <msg><![CDATA[moved dashboard to com.xebia.mojo
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-20</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardMojo.java</name>
+            <revision>77</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/resources</name>
+            <revision>77</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/resources/reports.properties</name>
+            <revision>77</revision>
+        </file>
+        <msg><![CDATA[MDP-29
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-25</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardMojo.java</name>
+            <revision>78</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/DashboardMojoTest.java</name>
+            <revision>78</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/TestDashBoardReport.java</name>
+            <revision>78</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/resources/mojo/config/columns-config.xml</name>
+            <revision>78</revision>
+        </file>
+        <msg><![CDATA[MDP-17
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-27</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardMojo.java</name>
+            <revision>79</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/html/CloverDashboardReport.java</name>
+            <revision>79</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/html/CpdDashboardReport.java</name>
+            <revision>79</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/TidyXmlUtil.java</name>
+            <revision>79</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/XmlUtil.java</name>
+            <revision>79</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/DashboardMojoTest.java</name>
+            <revision>79</revision>
+        </file>
+        <msg><![CDATA[Added convenience method to util to prevent casting.
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-27</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardMojo.java</name>
+            <revision>80</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/html/CloverDashboardReport.java</name>
+            <revision>80</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/html/CoberturaDashboardReport.java</name>
+            <revision>80</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/HtmlUtil.java</name>
+            <revision>80</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/resources/reports.properties</name>
+            <revision>80</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/html/CoberturaDashboardReportTest.java</name>
+            <revision>80</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/resources/frame-summary.html</name>
+            <revision>80</revision>
+        </file>
+        <msg><![CDATA[Added Cobertuta HTML style.
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-27</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[jvanerp]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/LICENSE</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardMojo.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardUtil.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/AbstractDashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/HtmlFileXPathReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/XmlFileXpathReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/html/CheckstyleDashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/html/CloverDashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/html/CoberturaDashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/html/CpdDashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/html/SurefireDashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/CoberturaDashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/FindBugsDashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/JDependDashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/NcssDashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/PmdDashboardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/Cell.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/HtmlUtil.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/Row.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/Table.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/TidyXmlUtil.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/XmlUtil.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/DashboardMojoTest.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/DashboardUtilTest.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/TestDashBoardReport.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/mocks/MockBuild.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/mocks/MockMavenProject.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/mocks/MockReporting.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/AbstractDashboardReportTester.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/html/CloverDashboardReportTest.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/html/CoberturaDashboardReportTest.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/html/CpdDashboardReportTest.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/html/SurefireDashboardReportTest.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/CoberturaDashboardReportTest.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/FindBugsDashboardReportTest.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/JDependDashboardReportTest.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/NcssDashboardReportTest.java</name>
+            <revision>81</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/PmdDashboardReportTest.java</name>
+            <revision>81</revision>
+        </file>
+        <msg><![CDATA[Licensed all source code under the Apache License V2.0
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-27</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[jvanerp]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/pom.xml</name>
+            <revision>82</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/maven</name>
+            <revision>82</revision>
+        </file>
+        <msg><![CDATA[added docck and license to pom.xml
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[jvanerp]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardUtil.java</name>
+            <revision>83</revision>
+        </file>
+        <msg><![CDATA[MDP-31: Checking to see whether we have arrived at executionRoot.
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[jvanerp]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/CoberturaDashboardReport.java</name>
+            <revision>84</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/Cell.java</name>
+            <revision>84</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/Row.java</name>
+            <revision>84</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/Table.java</name>
+            <revision>84</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/CoberturaDashboardReportTest.java</name>
+            <revision>84</revision>
+        </file>
+        <msg><![CDATA[Removed old CoberturaReport, 2 reports doing the same is overdoing it ;-)
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/pom.xml</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardMojo.java</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/MavenDashboardReport.java</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/html/CloverDashboardReport.java</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/html/CoberturaDashboardReport.java</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/util/HtmlUtil.java</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/resources/dashboard.properties</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/apt</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/apt/about.apt</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/apt/background.apt</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/apt/examples</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/apt/examples/extend.apt</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/apt/index.apt</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/apt/usage.apt</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/fml</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/fml/faq.fml</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/resources</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/resources/gfx</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/resources/gfx/xebia-logo.gif</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/site.xml</name>
+            <revision>85</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/DashboardMojoTest.java</name>
+            <revision>85</revision>
+        </file>
+        <msg><![CDATA[- Added MavenReport
+- First attempt to plugin site
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/pom.xml</name>
+            <revision>86</revision>
+        </file>
+        <msg><![CDATA[
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/pom.xml</name>
+            <revision>87</revision>
+        </file>
+        <msg><![CDATA[
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/pom.xml</name>
+            <revision>88</revision>
+        </file>
+        <msg><![CDATA[Added checkstyle
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/apt/about.apt</name>
+            <revision>89</revision>
+        </file>
+        <msg><![CDATA[
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[jvanerp]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardMojo.java</name>
+            <revision>90</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/LoggerAware.java</name>
+            <revision>90</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/reports/xml/FindBugsDashboardReport.java</name>
+            <revision>90</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/resources/reports.properties</name>
+            <revision>90</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/FindBugsDashboardReportTest.java</name>
+            <revision>90</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/resources/findbugs.xml</name>
+            <revision>90</revision>
+        </file>
+        <msg><![CDATA[Added FindBugs DashboardReport
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[jvanerp]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/java/com/xebia/mojo/dashboard/reports/xml/FindBugsDashboardReportTest.java</name>
+            <revision>91</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/resources/findbugs-1.1.xml</name>
+            <revision>91</revision>
+        </file>
+        <msg><![CDATA[Added test that fails on findbugs-1.1.xml
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/site/apt/index.apt</name>
+            <revision>92</revision>
+        </file>
+        <msg><![CDATA[
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/resources/mojo/config/columns-config.xml</name>
+            <revision>93</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/test/resources/mojo/config/one-report.xml</name>
+            <revision>93</revision>
+        </file>
+        <msg><![CDATA[Fixed build
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/test.html</name>
+            <revision>94</revision>
+        </file>
+        <msg><![CDATA[
+]]></msg>
+    </changelog-entry>
+    <changelog-entry>
+        <date pattern="yyyy-MM-dd">2007-06-28</date>
+        <time pattern="HH:mm:ss">00:00:00</time>
+        <author><![CDATA[mwinkels]]></author>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/DashboardMojo.java</name>
+            <revision>95</revision>
+        </file>
+        <file>
+            <name>/maven-dashboard-plugin/trunk/src/main/java/com/xebia/mojo/dashboard/MavenDashboardReport.java</name>
+            <revision>95</revision>
+        </file>
+        <msg><![CDATA[Formatting and documentation
+]]></msg>
+    </changelog-entry>
+</changeset>
+
+</changelog>

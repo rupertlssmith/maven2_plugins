@@ -1,0 +1,46 @@
+ ------
+ Usage
+ ------
+ ------
+ ------
+
+Usage
+
+  The Maven Dashboard Plugin can be used to generate a quick overview over the report information available on the project. It will use sensible default:
+
+  [[1]] By default all known reports will be checked. If a report is not configured for a (sub) project, the corresponding cell in the table will be empty. 
+
+  [[2]] By default the table will be added to the content <<<div>>> of the index.html page.
+
+  []
+
+  These defaults can be changed by configuring the {{{dashboard-mojo.html}dashboard:dashboard}} goal.
+
+* Executing the plugin
+
+  The plugin must be executed as a separate goal execution. A typical execution could look like
+
++---+
+mvn clean site dashboard:dashboard site:deploy
++---+
+
+  The plugin should be added to the plugins node within the build node of your pom.
+
++---+
+    <build>
+    ...
+        <plugins>
+        ...
+            <plugin>
+                <groupId>com.xebia.mojo</groupId>
+                <artifactId>maven-dashboard-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
++---+
+
+* Integrating the dashboard in your project site
+
+  By default the plugin is not run as a report. This is because it should be an aggregator report, which is currently not supported by Maven. As a result the dashboard table will have to be added to an existing page in your site. By default index.html is used, since this page will most likely exist in every site. The {{{dashboard-mojo.html}dashboard:dashboard}} goal can be configured to use any existing file.
+
+  The Maven Dashboard Plugin however also provides a reporting MOJO. This MOJO will generate a placeholder page on which the dashboard table can be added (it will actually replace the place holder). See the {{{examples/report.html}Configure the Dashboard plugin to run as a report}} example for details on how to configure this.

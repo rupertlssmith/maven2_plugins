@@ -1,0 +1,14 @@
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.xebia.maven.plugins</groupId>
+                <artifactId>maven-dashboard-plugin</artifactId>
+                <configuration>
+                    <destinationFile>${project.reporting.outputDirectory}/index.html</destinationFile>
+                    <xpathToDestinationNode>//div[@id='contentBox']</xpathToDestinationNode>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

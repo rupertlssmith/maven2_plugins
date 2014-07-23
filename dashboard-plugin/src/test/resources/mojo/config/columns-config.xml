@@ -1,0 +1,22 @@
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.xebia.maven.plugins</groupId>
+                <artifactId>maven-dashboard-plugin</artifactId>
+                <configuration>
+                    <destinationFile>${project.reporting.outputDirectory}/index.html</destinationFile>
+                    <xpathToDestinationNode>//div[@id='contentBox']</xpathToDestinationNode>
+                    <reports>
+                        <report>maven-surefire-report-plugin</report>
+                        <report>com.xebia.mojo.dashboard.TestDashBoardReport</report>
+                    </reports>
+                    <columns>
+                        <com.xebia.mojo.dashboard.TestDashBoardReport>col1,col3</com.xebia.mojo.dashboard.TestDashBoardReport>
+                        <maven-surefire-report-plugin>errors</maven-surefire-report-plugin>
+                    </columns>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

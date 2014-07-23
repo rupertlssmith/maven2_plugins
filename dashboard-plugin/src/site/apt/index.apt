@@ -1,0 +1,57 @@
+ ------
+ Introduction
+ ------
+ ------
+ ------
+
+Maven Dashboard Report
+
+  The Dashboard plugin generates a quick overview over the report information available on the project.
+
+  The information of all reports is collected and shown in a single table. The table contains a row for each (sub) module. Each statistic is shown in a column. This implementation resembles the Maven 1 dashboard plugin.
+		
+  The following reports are currently supported:
+
+  * {{{http://maven.apache.org/plugins/maven-changelog-plugin}Changelog}}
+
+  * {{{http://maven.apache.org/plugins/maven-checkstyle-plugin}Checkstyle}}
+  
+  * {{{http://maven.apache.org/plugins/maven-clover-plugin}Clover}}
+  
+  * {{{http://mojo.codehaus.org/cobertura-maven-plugin}Cobertura}}
+ 
+  * {{{http://maven.apache.org/plugins/maven-pmd-plugin}Cpd}}
+ 
+  * {{{http://mojo.codehaus.org/findbugs-maven-plugin}Findbugs}}
+ 
+  * {{{http://mojo.codehaus.org/plugins/jdepend-maven-plugin}JDepend}}
+ 
+  * {{{http://mojo.codehaus.org/javancss-maven-plugin}NCSS}}
+ 
+  * {{{http://maven.apache.org/plugins/maven-pmd-plugin}PMD}}
+ 
+  * {{{http://maven.apache.org/plugins/maven-surefire-report-plugin}Surefire}}
+ 
+  * {{{http://mojo.codehaus.org/taglist-maven-plugin}Taglist}}
+
+* Goals Overview
+
+  This plugin has a reporting goal and a build goal:
+
+  * The {{{report-mojo.html}dashboard:report}} goal generates a dummy report, that will be replaced by the {{{dashboard-mojo.html}dashboard:dashboard}} goal. This page will be linked in the Project Reports menu.
+  
+  * The {{{dashboard-mojo.html}dashboard:dashboard}} goal is the main goal of this plugin. It will collect the statistics from the reports configured for the project and display them in single table. By default the table will be appended to the index.html page. This MOJO can be configured to append the table to any file and any (X)HTML tag in that file, by using XPath. 
+
+* Usage
+
+  Instructions on how to use the Maven Dashboard Plugin can be found {{{usage.html}here}}.
+
+* Examples
+
+  * {{{examples/report.html}Configure the Dashboard plugin to run as a report}} - This example explains how you can configure this plugin to append the dashboard table to the report page created by the reporting goal. This configuration will not change the index.html, which is the default behaviour of the plugin.
+
+  * {{{examples/configuration.html}Customize the Dashboard table}} - This example explains how to customize the dashboard table to include the statistics you want.
+
+  * {{{examples/extend.html}Create a Dashboard Report}} - This example explains how to extend the plugin by a new dashboard report. The statistics will be added to the dashboard table.
+
+  

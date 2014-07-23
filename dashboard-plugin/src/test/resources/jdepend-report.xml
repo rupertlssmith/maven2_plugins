@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang.reflect">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.net">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.sql">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.text">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.regex">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.faces.context">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.faces.model">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.naming">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.servlet">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.servlet.http">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="junit.framework">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="nl.kennisnet.entreeng.gec.attributes">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="nl.kennisnet.teleblik.shared">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>1</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Constants.java">
+                    nl.kennisnet.teleblik.shared.Constants
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="nl.kennisnet.teleblik.shared.data">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>3</Ca>
+                <Ce>1</Ce>
+                <A>0</A>
+                <I>0.25</I>
+                <D>0.75</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="BusinessLogicException.java">
+                    nl.kennisnet.teleblik.shared.data.BusinessLogicException
+                </Class>
+                <Class sourceFile="TermNotUniqueException.java">
+                    nl.kennisnet.teleblik.shared.data.TermNotUniqueException
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>nl.kennisnet.teleblik.shared.data.indelingen</Package>
+                <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+                <Package>nl.kennisnet.teleblik.shared.data.termen</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="nl.kennisnet.teleblik.shared.data.avbron">
+            <Stats>
+                <TotalClasses>5</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>6</Ce>
+                <A>0.4</A>
+                <I>1</I>
+                <D>0.4</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="AvBronService.java">
+                    nl.kennisnet.teleblik.shared.data.avbron.AvBronService
+                </Class>
+                <Class sourceFile="NibgCatalogusDao.java">
+                    nl.kennisnet.teleblik.shared.data.avbron.NibgCatalogusDao
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AvBronServiceImpl.java">
+                    nl.kennisnet.teleblik.shared.data.avbron.AvBronServiceImpl
+                </Class>
+                <Class sourceFile="NibgCatalogusDaoImpl.java">
+                    nl.kennisnet.teleblik.shared.data.avbron.NibgCatalogusDaoImpl
+                </Class>
+                <Class sourceFile="NibgCatalogusDaoImpl.java">
+                    nl.kennisnet.teleblik.shared.data.avbron.NibgCatalogusDaoImpl$1
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+                <Package>org.hibernate</Package>
+                <Package>org.hibernate.criterion</Package>
+                <Package>org.springframework.orm.hibernate3</Package>
+                <Package>org.springframework.orm.hibernate3.support</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+        <Package Name="nl.kennisnet.teleblik.shared.data.avbron">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.dao">
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.fragment">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.indelingen">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.metadata">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.model">
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.report">
+            <Package>nl.kennisnet.teleblik.shared.data.report.visitor</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.report</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.report.visitor">
+            <Package>nl.kennisnet.teleblik.shared.data.report</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.report.visitor</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.rollen">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.search">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.service.boostfactor">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.service.sysprop">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.termen">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.user">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.data.util">
+            <Package>nl.kennisnet.teleblik.shared.util</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.importer">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.rubriekupdate">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.termcache">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.util">
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+        <Package Name="nl.kennisnet.teleblik.shared.util.pager">
+            <Package>nl.kennisnet.teleblik.shared.data.service.sysprop</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.fragment</Package>
+            <Package>nl.kennisnet.teleblik.shared.data.model</Package>
+        </Package>
+
+    </Cycles>
+</JDepend>

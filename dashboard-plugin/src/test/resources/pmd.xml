@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="3.7" timestamp="2007-05-24T20:41:01.988" elapsedTime="0s">
+<file name="/home/jeroen/Xebia/Tasking/workspace/xebia-utils/xebia-xml-utils/src/main/java/com/xebia/utils/xml/marshalling/ObjectInputIterator.java">
+<violation line="12" rule="UnusedImports" ruleset="Import Statement Rules" package="com.xebia.utils.xml.marshalling" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.Iterator'
+</violation>
+<violation line="13" rule="UnusedImports" ruleset="Import Statement Rules" package="com.xebia.utils.xml.marshalling" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.Collection'
+</violation></file>
+</pmd>

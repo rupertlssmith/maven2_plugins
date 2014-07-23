@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<faqs id="FAQ" title="Frequently Asked Questions">
+  <part id="General">
+    <faq id="extend">
+      <question>I want to aggregate the results of a non-supported reporting plugin, is that possible?</question>
+      <answer>
+        <p>
+        Yes, it is fairly easy to extend the Maven2 Dashboard. More information can be found in <a href="examples/extend.html">this</a> page.
+        </p>
+      </answer>
+    </faq>
+    <faq id="xebian">
+      <question>I want to contribute, but I'm not employed by Xebia, is this possible?</question>
+      <answer>
+        <p>In short, Yes! Of course this is possible. You can start contributing by adding your feature requests in our issue management system, and submitting patches.
+        If we think you make a valuable addition to the team, we will offer you commit rights.</p>
+      </answer>
+    </faq>
+  </part>
+</faqs>

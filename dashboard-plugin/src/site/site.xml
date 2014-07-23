@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Maven Dashboard Report">
+    <bannerLeft>
+        <name>Xebia</name>
+        <src>gfx/xebia-logo.gif</src>
+        <href>http://xebia.com/</href>
+    </bannerLeft>
+
+    <body>
+        <links>
+            <item name="Apache" href="http://www.apache.org/" />
+            <item name="Maven 2" href="http://maven.apache.org/maven2/" />
+            <item name="Xebia" href="http://xebia.com/" />
+        </links>
+
+        <menu name="Mojo">
+            <item name="Back to mojo" href="http://mojo.os.xebia.com/" />
+        </menu>
+
+        <menu name="Overview">
+            <item name="Introduction" href="index.html" />
+            <item name="Usage" href="usage.html" />
+            <item name="Goals" href="plugin-info.html" />
+            <item name="Background" href="background.html" />
+            <item name="FAQ" href="faq.html" />
+        </menu>
+
+        <menu name="Sample Reports">
+            <item name="Sample Dashboard" href="maven-dashboard-report.html" />
+        </menu>
+
+        <menu name="Configuration">
+            <item
+                name="Configure dashboard as report"
+                href="examples/report.html" />
+            <item name="Customizing the Dashboard"
+                href="examples/configuration.html" />
+            <item name="Report columns" href="examples/columns.html"/>
+        </menu>
+
+        <menu name="Extending">
+            <item name="Adding your own Dashboard Report"
+                href="examples/extend.html" />
+        </menu>
+
+        <menu ref="reports" />
+    </body>
+</project>

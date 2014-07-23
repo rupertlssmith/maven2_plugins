@@ -1,0 +1,35 @@
+ ------
+ Background
+ ------
+ ------
+ ------
+
+Background
+
+  A simple Maven project can easily generate a site filled with a lot of numbers describing the quality of the project. A QA officer could easily get lost in this huge amount of data. Having a quick, configurable overview is very important. The Maven Dashboard Report aims to provided this overview.
+
+  The {{{http://maven.apache.org/maven-1.x/plugins/dashboard}Maven Dashboard plugin for Maven 1}} provided just that. Maven 2 has lacked such a tool for quite some time. The Maven Dashboard Report is designed to resemble the Maven 1 plugin as much as possible.
+
+  You will find quite a number of Dashboard Report implementations for Maven 2 if you search the internet. We haven't evaluated all of them before attempting our own implementation. We did however look at a few and couldn't find what we were looking for. Most noteably {{{http://mojo.codehaus.org/dashboard-maven-plugin/}the one being developed at codehaus}}. We think it tries to do too much and (at the moment) delivers too little.
+
+  For our own implementation we held three core values in mind:
+
+  [[1]] Simplicity
+
+  [[2]] Extensibility
+
+  [[3]] Manageability
+
+* Simplicity
+
+  Since the Dashboard Plugin only collects the data other reports have already generated, the design and implementation should be very simple. All statistics are already gathered and formatted correctly in HTML by the reporting plugins. The Dashboard Plugin therefore only extracts the necessary DOM nodes from the XHTML pages and pastes them into the destination document. In some cases a HTML DOM node is created from an XML report, but only if no formatting is necessary.
+
+  The Dashboard Plugin depends heavily on DOM and XPath to do its work. DOM4J is used to do the parsing and to evaluate the XPath expressions.
+
+* Extensibility
+
+  We strive to provide a dashboard with an overview of all reports that the Dashboard Plugin for Maven 1 has. In some cases we think a report is not very important. Some users might want to have these statistics integrated anyway or have a custom reporting plugin that they want to integrate. The Dashboard Plugin has a simple extension mechanism. See the {{{examples/extend.html}Create a Dashboard Report}} example for details on how to use this.
+
+* Manageability
+
+  As there are a great number of statistics that a maven build will gather, you will only want the most important ones in the dashboard table. Which ones are important to you might change from project to project or even from release to release of the same project. Which statistics are shown in the dashboard table is completely configurable. See the {{{examples/configuration.html}Customize the Dashboard table}} example for details on this.

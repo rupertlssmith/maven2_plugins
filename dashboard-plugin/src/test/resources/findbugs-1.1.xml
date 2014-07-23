@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BugCollection version="1.2.0" threshold="Low" effort="Default" >
+<file classname="com.xebia.mojo.dashboard.util.TidyXmlUtil" >
+<BugInstance type="XFB_XML_FACTORY_BYPASS" priority="Low" category="STYLE" message="XFB: Method com.xebia.mojo.dashboard.util.TidyXmlUtil.writeDocument(Document, File) directly allocates a specific implementation of xml interfaces" lineNumber="60" />
+<BugInstance type="XFB_XML_FACTORY_BYPASS" priority="Low" category="STYLE" message="XFB: Method com.xebia.mojo.dashboard.util.TidyXmlUtil.writeDocument(Document, File) directly allocates a specific implementation of xml interfaces" lineNumber="60" />
+</file>
+<file classname="com.xebia.mojo.dashboard.reports.HtmlFileXPathReport" >
+<BugInstance type="EI_EXPOSE_REP2" priority="Normal" category="MALICIOUS_CODE" message="EI2: com.xebia.mojo.dashboard.reports.HtmlFileXPathReport.HtmlFileXPathReport(String[]) may expose internal representation by storing an externally mutable object into HtmlFileXPathReport.xpaths" lineNumber="29" />
+<BugInstance type="EI_EXPOSE_REP2" priority="Normal" category="MALICIOUS_CODE" message="EI2: com.xebia.mojo.dashboard.reports.HtmlFileXPathReport.HtmlFileXPathReport(String[]) may expose internal representation by storing an externally mutable object into HtmlFileXPathReport.xpaths" lineNumber="29" />
+</file>
+<file classname="com.xebia.mojo.dashboard.reports.xml.CoberturaDashboardReport" >
+<BugInstance type="RV_RETURN_VALUE_IGNORED" priority="High" category="CORRECTNESS" message="RV: com.xebia.mojo.dashboard.reports.xml.CoberturaDashboardReport.coverage(MavenProject) ignores return value of java.math.BigDecimal.setScale(int)" lineNumber="82" />
+<BugInstance type="RV_RETURN_VALUE_IGNORED" priority="High" category="CORRECTNESS" message="RV: com.xebia.mojo.dashboard.reports.xml.CoberturaDashboardReport.coverage(MavenProject) ignores return value of java.math.BigDecimal.setScale(int)" lineNumber="82" />
+</file>
+<file classname="com.xebia.mojo.dashboard.DashboardMojo$1" >
+<BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="Low" category="STYLE" message="UwF: DashboardMojo.project not initialized in constructor" lineNumber="Not available" />
+<BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="Low" category="STYLE" message="UwF: DashboardMojo.project not initialized in constructor" lineNumber="Not available" />
+<BugInstance type="UWF_UNWRITTEN_FIELD" priority="Normal" category="CORRECTNESS" message="UwF: Unwritten field: com.xebia.mojo.dashboard.DashboardMojo.destinationFile" lineNumber="112" />
+<BugInstance type="UWF_UNWRITTEN_FIELD" priority="Normal" category="CORRECTNESS" message="UwF: Unwritten field: com.xebia.mojo.dashboard.DashboardMojo.destinationFile" lineNumber="112" />
+<BugInstance type="UWF_UNWRITTEN_FIELD" priority="Normal" category="CORRECTNESS" message="UwF: Unwritten field: com.xebia.mojo.dashboard.DashboardMojo.reports" lineNumber="134" />
+<BugInstance type="UWF_UNWRITTEN_FIELD" priority="Normal" category="CORRECTNESS" message="UwF: Unwritten field: com.xebia.mojo.dashboard.DashboardMojo.reports" lineNumber="134" />
+<BugInstance type="UWF_UNWRITTEN_FIELD" priority="Normal" category="CORRECTNESS" message="UwF: Unwritten field: com.xebia.mojo.dashboard.DashboardMojo.xpathToDestinationNode" lineNumber="113" />
+<BugInstance type="UWF_UNWRITTEN_FIELD" priority="Normal" category="CORRECTNESS" message="UwF: Unwritten field: com.xebia.mojo.dashboard.DashboardMojo.xpathToDestinationNode" lineNumber="113" />
+<Errors>
+</Errors>
+</BugCollection>

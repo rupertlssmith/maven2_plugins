@@ -1,0 +1,970 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <title>D-reizen Website - CPD Results</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                    <span id="bannerLeft">
+    
+            D-reizen Website
+    
+            </span>
+                    <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+            <div class="xleft">
+        Last Published: 01/07/2007
+                      </div>
+            <div class="xright">      <a href="NO_PROJECT_URL_SET">D-reizen Website</a>
+          
+  
+
+  
+    
+  
+  
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+                   <ul>
+          </ul>
+          <h5>Project Documentation</h5>
+        <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+              <a href="project-info.html">Project Information</a>
+              </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+            
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+              <a href="project-reports.html">Project Reports</a>
+                <ul>
+                  
+    <li class="none">
+              <a href="changelog.html">Change Log</a>
+        </li>
+                  
+    <li class="none">
+              <a href="checkstyle.html">Checkstyle</a>
+        </li>
+                  
+    <li class="none">
+              <a href="clover/index.html">Clover</a>
+        </li>
+                  
+    <li class="none">
+              <strong>CPD Report</strong>
+        </li>
+                  
+    <li class="none">
+              <a href="dev-activity.html">Developer Activity</a>
+        </li>
+                  
+    <li class="none">
+              <a href="file-activity.html">File Activity</a>
+        </li>
+                  
+    <li class="none">
+              <a href="findbugs.html">FindBugs Report</a>
+        </li>
+                  
+    <li class="none">
+              <a href="apidocs/index.html">JavaDocs</a>
+        </li>
+                  
+    <li class="none">
+              <a href="javancss.html">JavaNCSS Report</a>
+        </li>
+                  
+    <li class="none">
+              <a href="jdepend-report.html">JDepend</a>
+        </li>
+                  
+    <li class="none">
+              <a href="surefire-report.html">Maven Surefire Report</a>
+        </li>
+                  
+    <li class="none">
+              <a href="pmd.html">PMD Report</a>
+        </li>
+                  
+    <li class="none">
+              <a href="jxr.html">Source Xref</a>
+        </li>
+              </ul>
+        </li>
+          </ul>
+                                       <a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>CPD Results</h2><p>The following document contains the results of PMD's  <a href="http://pmd.sourceforge.net/cpd.html">CPD</a> 3.7.</p></div><div class="section"><h2>Duplications</h2><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#196">196</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#251">251</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        jt.query(SELECT_ALTERNATIVES_SQL, new Object[] {handler.getTransactionId(), handler.getTransactionId()}, new RowCallbackHandler() {
+
+            public void processRow(ResultSet rs) throws SQLException {
+
+                int sorteerKenmerk = rs.getInt(&quot;SORTEERKENMERK&quot;);
+                int flightSequenceNr = rs.getInt(&quot;VLT_NUMMER&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/LessThanSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/LessThanSpecification.html#25">25</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/GreaterThanSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/GreaterThanSpecification.html#28">28</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public GreaterThanSpecification(String field, Comparable value) {
+        super(field);
+        this.value = value;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @SuppressWarnings(&quot;unchecked&quot;)
+    @Override
+    protected boolean valueSatisfies(Comparable valueToCheck) {
+        return valueToCheck.compareTo(value) &gt; 0;</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/AirportFilter.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/AirportFilter.html#27">27</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/AirportFilter.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/AirportFilter.html#46">46</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public List&lt;Airport&gt; getDestinationAirportsForFlights(List&lt;Flight&gt; flights) {
+        List&lt;Airport&gt; airports = new ArrayList&lt;Airport&gt;();
+        if (flights != null) {
+            for (Flight flight : flights) {
+                Airport flyTo = flight.getFlyTo();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#196">196</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#285">285</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        jt.query(SELECT_SEGMENTS_SQL, new Object[] {handler.getTransactionId(), handler.getTransactionId()}, new RowCallbackHandler() {
+
+            public void processRow(ResultSet rs) throws SQLException {
+
+                int flightSequenceNr = rs.getInt(&quot;VLT_NUMMER&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#157">157</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#196">196</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        jt.query(SELECT_LEGS_SQL, new Object[] {handler.getTransactionId(), handler.getTransactionId()}, new RowCallbackHandler() {
+            public void processRow(ResultSet rs) throws SQLException {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#156">156</a></td></tr><tr class="a"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#165">165</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    properties.put(&quot;arrivalAirport&quot;, new PropertyGetter&lt;FlightTicketOffer&gt;() {
+      
+      @Override
+      public Object getProperty(FlightTicketOffer obj) {
+        return obj.getArrivalPlace();
+      }
+      
+    });
+    
+    properties.put(&quot;arrivalCountry&quot;, new PropertyGetter&lt;FlightTicketOffer&gt;(false) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#204">204</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightAlternative.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightAlternative.html#75">75</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public List&lt;FlightSegment&gt; getSegments() {
+        return segments;
+    }
+
+    public void setSegments(List&lt;FlightSegment&gt; segments) {
+        this.segments = segments;
+    }
+
+    public boolean isSelected() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/bb/FlightTicketOfferController.java</td><td><a href="./xref/com/xebia/dreizen/bb/FlightTicketOfferController.html#34">34</a></td></tr><tr class="a"><td>com/xebia/dreizen/bb/FlightTicketOfferController.java</td><td><a href="./xref/com/xebia/dreizen/bb/FlightTicketOfferController.html#36">36</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    flightTicketOffers.add(new FlightTicketOffer(2, &quot;Heathrow&quot;, &quot;London&quot;, &quot;Groot Britannie&quot;, &quot;Amsterdam&quot;, &quot;Lufthansa&quot;, 250.0, new LocalDate(),
+        new LocalTime(), new LocalDate(), new LocalTime()));
+    flightTicketOffers.add(new FlightTicketOffer(3, &quot;Heathrow&quot;, &quot;London&quot;, &quot;Groot Britannie&quot;, &quot;Amsterdam&quot;, &quot;Lufthansa&quot;, 200.0, new LocalDate(),</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightRefiner.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRefiner.html#84">84</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/BaseSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/BaseSpecification.html#49">49</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Specification lessThanEqualsTo(String field, Comparable value) {
+        return new LessThanSpecification(field, value).or(new EqualsSpecification(field, value));
+    }
+}</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/DojoController.java</td><td><a href="./xref/com/xebia/dreizen/util/DojoController.html#46">46</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/DojoController.java</td><td><a href="./xref/com/xebia/dreizen/util/DojoController.html#59">59</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void queryForNationalities(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws IOException {
+        String criterium = httpServletRequest.getParameter(&quot;criterium&quot;);
+        if (criterium != null) {
+            List&lt;Nationality&gt; nationalities = nationalityRepository.findMatching(criterium);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightRefiner.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRefiner.html#80">80</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/BaseSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/BaseSpecification.html#42">42</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Specification greaterThanEqualsTo(String field, Comparable value) {
+        return new GreaterThanSpecification(field, value).or(new EqualsSpecification(field, value));
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#289">289</a></td></tr><tr class="a"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#143">143</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>  }
+
+  public Map&lt;String, PropertyGetter&gt; getSortOrder() {
+    Map&lt;String, PropertyGetter&gt; properties = new ListOrderedMap();
+    properties.put(&quot;price&quot;, new PropertyGetter&lt;FlightTicketOffer&gt;() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/JodaLocalDateEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/JodaLocalDateEditor.html#43">43</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/JodaDateTimeEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/JodaDateTimeEditor.html#46">46</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return dateTime == null ? &quot;&quot; : dateTime.toString(format);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setAsText(String text) throws IllegalArgumentException {
+        if (!StringUtils.isBlank(text)) {
+            try {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#334">334</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#344">344</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>      properties.put(&quot;flyTo&quot;, new PropertyGetter&lt;Flight&gt;(false) {
+
+        @Override
+        public Object getProperty(Flight obj) {
+          return obj.getDepartureLeg().getFlyTo().getName();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#200">200</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#217">217</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    return new HashCodeBuilder().append(getCarrier().getCode()).append(getDepartureLeg().getSegments().get(0).getFlightNr()).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#75">75</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightAlternative.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightAlternative.html#59">59</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public int getLegNumber() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSegment.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSegment.html#149">149</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#115">115</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public long getCarrierId() {
+        return carrierId;
+    }
+
+    public void setCarrierId(long carrierId) {
+        this.carrierId = carrierId;
+    }
+
+    public String getBasisFareAdult() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSegment.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSegment.html#109">109</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightAlternative.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightAlternative.html#35">35</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+    
+    public int getFlightSequenceNr() {
+        return flightSequenceNr;
+    }
+
+    public void setFlightSequenceNr(int flightSequenceNr) {
+        this.flightSequenceNr = flightSequenceNr;
+    }
+
+    public int getAlternativeNr() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#202">202</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#217">217</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    return new HashCodeBuilder().append(getCarrier().getCode()).append(getDepartureLeg().getSegments().get(0).getFlightNr()).append(
+        getDepartureLeg().getDepartureDateTime()).append(getReturnLeg().getDepartureDateTime()).toHashCode();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#60">60</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#40">40</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getName() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/JodaLocalTimeEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/JodaLocalTimeEditor.html#45">45</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/JodaDateTimeEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/JodaDateTimeEditor.html#46">46</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return dateTime == null ? &quot;&quot; : dateTime.toString(format);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setAsText(String text) throws IllegalArgumentException {
+        if (!StringUtils.isBlank(text)) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/JodaLocalDateEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/JodaLocalDateEditor.html#53">53</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/JodaDateTimeEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/JodaDateTimeEditor.html#57">57</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                setValue(dateTimeFormatter.parseDateTime(text));
+            } catch (IllegalArgumentException e) {
+                // throw our own illegalargument.
+                throw new IllegalArgumentException(&quot;Could not convert date: &quot; + text + &quot; to format: &quot; + format);
+            }
+        }
+    }
+}</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/JodaLocalDateEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/JodaLocalDateEditor.html#43">43</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/JodaLocalTimeEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/JodaLocalTimeEditor.html#45">45</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    return value == null ? &quot;&quot; : value.toString(&quot;hh:mm&quot;);
+  }
+
+  /**
+   * {@inheritDoc}
+   */
+  @Override
+  public void setAsText(String text) throws IllegalArgumentException {
+    if (!StringUtils.isBlank(text)) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#99">99</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightAlternative.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightAlternative.html#35">35</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+    
+    public int getFlightSequenceNr() {
+        return flightSequenceNr;
+    }
+
+    public void setFlightSequenceNr(int flightSequenceNr) {
+        this.flightSequenceNr = flightSequenceNr;
+    }
+
+    public int getAlternativeNr() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSegment.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSegment.html#117">117</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightAlternative.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightAlternative.html#67">67</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public int getLegNumber() {
+        return legNumber;
+    }
+
+    public void setLegNumber(int legNumber) {
+        this.legNumber = legNumber;
+    }
+
+    public List&lt;FlightSegment&gt; getSegments() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSegment.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSegment.html#109">109</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#99">99</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public int getFlightSequenceNr() {
+        return flightSequenceNr;
+    }
+
+    public void setFlightSequenceNr(int flightSequenceNr) {
+        this.flightSequenceNr = flightSequenceNr;
+    }
+
+    public String getCarrierCode() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSegment.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSegment.html#101">101</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightAlternative.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightAlternative.html#51">51</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
+    public String getDuration() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#95">95</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSegment.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSegment.html#85">85</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public int getSequenceNr() {
+        return sequenceNr;
+    }
+
+    public void setSequenceNr(int sequenceNr) {
+        this.sequenceNr = sequenceNr;
+    }
+
+    public DateTime getArrivalDateTime() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/XStreamLocalDateConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamLocalDateConverter.html#34">34</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/XStreamDateTimeConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamDateTimeConverter.html#35">35</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return dateTimeEditor.getValue();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String toString(Object object) {
+        return object == null ? null : ((DateTime) object).toString(&quot;dd-MM-yyyy HH:mm&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#159">159</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightRefinements.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRefinements.html#62">62</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public BigDecimal getTotalTravelAmount() {
+        return totalTravelAmount;
+    }
+
+    public void setTotalTravelAmount(BigDecimal totalTravelAmount) {
+        this.totalTravelAmount = totalTravelAmount;
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#76">76</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#48">48</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#147">147</a></td></tr><tr class="a"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#192">192</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    properties.put(&quot;carrier&quot;, new PropertyGetter&lt;FlightTicketOffer&gt;() {
+      
+      @Override
+      public Object getProperty(FlightTicketOffer obj) {
+        return obj.getCarrier();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/bb/FlightTicketOfferController.java</td><td><a href="./xref/com/xebia/dreizen/bb/FlightTicketOfferController.html#34">34</a></td></tr><tr class="a"><td>com/xebia/dreizen/bb/FlightTicketOfferController.java</td><td><a href="./xref/com/xebia/dreizen/bb/FlightTicketOfferController.html#38">38</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    flightTicketOffers.add(new FlightTicketOffer(3, &quot;Heathrow&quot;, &quot;London&quot;, &quot;Groot Britannie&quot;, &quot;Amsterdam&quot;, &quot;Lufthansa&quot;, 200.0, new LocalDate(),
+        new LocalTime(), new LocalDate(), new LocalTime()));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.html#61">61</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.html#77">77</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        Flight flight = this.getFlight(sorteerKenmerk, segment.getFlightSequenceNr());
+        FlightLeg leg = null;
+        if (flight != null) {
+            //alternative = flight.getAlternative(segment.getLegNumber(), segment.getAlternativeNr());
+            leg = flight.getLeg(segment.getLegNumber());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#297">297</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#315">315</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>      properties.put(&quot;departuredate&quot;, new PropertyGetter&lt;Flight&gt;() {
+
+        @Override
+        public Object getProperty(Flight obj) {
+          return obj.getDepartureLeg().getDepartureDateTime();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#267">267</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#279">279</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>  public boolean getHasIntermediateStops() {
+    boolean result = false;
+    if (getDepartureLeg() != null) {
+      result = getDepartureLeg().getHasIntermediateStops();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/OrSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/OrSpecification.html#29">29</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/AndSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/AndSpecification.html#24">24</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    /**
+     * Returns true when both predicates that form this predicate are satisfied, false otherwise.
+     */
+    @SuppressWarnings(&quot;unchecked&quot;)
+    public boolean isSatisfiedBy(Object object) {
+        return leftHandSide.isSatisfiedBy(object) &amp;&amp; rightHandSide.isSatisfiedBy(object);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#482">482</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#677">677</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        int execute(long tfxTransactionId) {
+
+            Map params = new HashMap();
+            params.put(&quot;PIN_TAE_ID&quot;, tfxTransactionId);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#270">270</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#282">282</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>      result = getDepartureLeg().getHasIntermediateStops();
+    }
+
+    if (!result &amp;&amp; getReturnLeg() != null) {
+      result = getReturnLeg().getHasIntermediateStops();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/SortedAirportList.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/SortedAirportList.html#44">44</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/SortedAirportList.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/SortedAirportList.html#47">47</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            } else {
+                result = o1.fullname().compareTo(o2.fullname());
+            }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#404">404</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#456">456</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            params.put(&quot;PIN_WME_TAE_ID&quot;, 0);
+
+            Map outParams = this.execute(params);
+            Number id = (Number) outParams.get(&quot;PON_TAE_ID&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#153">153</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#247">247</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    private void updateSegmentsInfo(final TFXSearchFlightResultHandlers handler) {
+
+        JdbcTemplate jt = new JdbcTemplate(this.dataSource);
+
+        jt.query(SELECT_SEGMENTS_SQL, new Object[] {handler.getTransactionId(), handler.getTransactionId()}, new RowCallbackHandler() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#278">278</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#80">80</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+    
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SIMPLE_STYLE).append(name).append(code).toString();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#297">297</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#306">306</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>      properties.put(&quot;direct&quot;, new PropertyGetter&lt;Flight&gt;() {
+
+        @Override
+        public Object getProperty(Flight obj) {
+          return !obj.isDirectFlight();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#58">58</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#76">76</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            result = new BigDecimal(cell.getStringCellValue());
+        } else if (isNumericType(cell)) {
+            result = new BigDecimal(cell.getNumericCellValue());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#126">126</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightRestrictions.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRestrictions.html#61">61</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    /**
+     * Sets the airportRepository.
+     * 
+     * @param airportRepository The airportRepository to set.
+     */
+    public void setAirportRepository(Repository&lt;Airport&gt; airportRepository) {
+        this.airportRepository = airportRepository;
+    }
+}</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#31">31</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/BookFlightValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/BookFlightValidator.html#37">37</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return BookFlightForm.class.isAssignableFrom(clazz);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public void validate(Object target, Errors errors) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#324">324</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#344">344</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>      properties.put(&quot;departFrom&quot;, new PropertyGetter&lt;Flight&gt;(false) {
+
+        @Override
+        public Object getProperty(Flight obj) {
+          return obj.getDepartureLeg().getDepartFrom().getName();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#201">201</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#202">202</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        getReturnLeg().getSegments().get(0).getFlightNr(), rhs.getReturnLeg().getSegments().get(0).getFlightNr()).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryNationalityRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryNationalityRepository.html#39">39</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/tfv/JdbcNationalityRepository.java</td><td><a href="./xref/com/xebia/dreizen/customer/tfv/JdbcNationalityRepository.html#37">37</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        List&lt;Nationality&gt; nationalities = simpleJdbcTemplate.query(FIND_ALL_NATIONALITIES, new NationalityRowMapper());
+        for (Nationality nationality : nationalities) {
+            if (nationality.matches(criterium)) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/XStreamLocalDateConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamLocalDateConverter.html#24">24</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/XStreamDateTimeConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamDateTimeConverter.html#25">25</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return DateTime.class.equals(clazz);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Object fromString(String dateAsString) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightBooker.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightBooker.html#81">81</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchResultController.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchResultController.html#140">140</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    /**
+     * @param flightRepository
+     */
+    public void setFlightRepository(Repository&lt;Flight&gt; flightRepository) {
+        this.flightRepository = flightRepository;
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#517">517</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#625">625</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            super(ds, &quot;tfx_ps_ldt.p_m_paramleg&quot;);
+
+            declareParameter(new SqlParameter(&quot;PIN_TAE_ID&quot;, Types.NUMERIC));
+            declareParameter(new SqlParameter(&quot;PIN_LEGNUMMER&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#126">126</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchResultController.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchResultController.html#154">154</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public void setAirportRepository(Repository&lt;Airport&gt; airportRepository) {
+        this.airportRepository = airportRepository;
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#201">201</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#202">202</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        getReturnLeg().getSegments().get(0).getFlightNr(), rhs.getReturnLeg().getSegments().get(0).getFlightNr()).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.html#26">26</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryCarrierRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryCarrierRepository.html#27">27</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public InMemoryCarrierRepository() {
+        initialize();
+    }
+    /**
+     * {@inheritDoc}
+     */
+    protected void initialize() {
+        synchronized (this) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/BaseSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/BaseSpecification.html#43">43</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/BaseSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/BaseSpecification.html#50">50</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return new LessThanSpecification(field, value).or(new EqualsSpecification(field, value));
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/XStreamLocalDateConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamLocalDateConverter.html#17">17</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/XStreamDateTimeConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamDateTimeConverter.html#19">19</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>public class XStreamDateTimeConverter extends AbstractSingleValueConverter {
+    /**
+     * {@inheritDoc}
+     */
+    @SuppressWarnings(&quot;unchecked&quot;)
+    public boolean canConvert(Class clazz) {
+        return DateTime.class.equals(clazz);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/BookerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/BookerValidator.html#107">107</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/CustomerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CustomerValidator.html#58">58</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (!errors.hasFieldErrors(dayOfBirthField()) &amp;&amp; customer.getDayOfBirth() == null) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/BookFlightValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/BookFlightValidator.html#74">74</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/BookFlightValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/BookFlightValidator.html#78">78</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    static void rejectInvalid(Errors errors, String field, String argument) {
+        errors.rejectValue(field, &quot;lijndiensten.bookFlight.booker.invalid&quot;, new String[] {argument}, argument + &quot; is ongeldig.&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightRefiner.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRefiner.html#81">81</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightRefiner.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRefiner.html#85">85</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return new LessThanSpecification(field, value).or(new EqualsSpecification(field, value));
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.html#64">64</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.html#81">81</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            leg = flight.getLeg(segment.getLegNumber());
+        }
+        if (leg == null) {
+            LOG.warn(&quot;Cannot find alternative for segment&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#87">87</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#104">104</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        int flightsFound = this.findFlightsProc.execute(tfxTransactionId);
+        if (LOG.isDebugEnabled()) {
+            LOG.debug(&quot;TxId: &quot; + tfxTransactionId + &quot; #flights: &quot; + flightsFound);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#155">155</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#211">211</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>  }
+
+
+
+  @Override
+  public int hashCode() {
+    return new HashCodeBuilder().append(getCarrier().getCode()).append(getDepartureLeg().getSegments().get(0).getFlightNr()).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#39">39</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#54">54</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        this.code = code;
+        this.name = name;
+        this.country = country;
+    }
+
+    public Airport() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/SortedAirportList.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/SortedAirportList.html#71">71</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/DojoController.java</td><td><a href="./xref/com/xebia/dreizen/util/DojoController.html#63">63</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            StringBuilder builder = new StringBuilder(&quot;{&quot;);
+            for (int i = 0; i &lt; nationalities.size(); i++) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchForm.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchForm.html#66">66</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/xml/XmlFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/xml/XmlFlightRepository.html#86">86</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    void setFlights(List&lt;Flight&gt; flights) {
+        this.flights = flights;
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#517">517</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#671">671</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            super(ds, &quot;tfx_ps_ldt.p_f_vluchten&quot;);
+            declareParameter(new SqlParameter(&quot;PIN_TAE_ID&quot;, Types.NUMERIC));
+            declareParameter(new SqlOutParameter(&quot;PON_AANTAL&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#379">379</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#440">440</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIN_WME_TAE_ID&quot;, Types.NUMERIC));
+        }
+
+        @SuppressWarnings(&quot;unchecked&quot;)
+        public long execute(long tfxSessionId) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#69">69</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/DojoController.java</td><td><a href="./xref/com/xebia/dreizen/util/DojoController.html#48">48</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (criterium != null) {
+            List&lt;Airport&gt; airports = airportRepository.findMatching(AirportRestrictions.matchOnStartOfCodeOrName(criterium));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#202">202</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#202">202</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        getReturnLeg().getSegments().get(0).getFlightNr(), rhs.getReturnLeg().getSegments().get(0).getFlightNr()).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#201">201</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#201">201</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        getDepartureLeg().getSegments().get(0).getFlightNr(), rhs.getDepartureLeg().getSegments().get(0).getFlightNr()).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryNationalityRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryNationalityRepository.html#33">33</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/tfv/JdbcNationalityRepository.java</td><td><a href="./xref/com/xebia/dreizen/customer/tfv/JdbcNationalityRepository.html#33">33</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public List&lt;Nationality&gt; findMatching(String criterium) {
+        List&lt;Nationality&gt; matched = new ArrayList&lt;Nationality&gt;();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.html#52">52</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/JdbcAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/JdbcAirportRepository.html#54">54</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public List&lt;Airport&gt; getEntities() {
+        return airports;
+    }
+}</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#147">147</a></td></tr><tr class="a"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#174">174</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    properties.put(&quot;arrivalCountry&quot;, new PropertyGetter&lt;FlightTicketOffer&gt;(false) {
+      
+      @Override
+      public Object getProperty(FlightTicketOffer obj) {
+        return obj.getArrivalCountry();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/CarrierEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/CarrierEditor.html#28">28</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/CarrierEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/CarrierEditor.html#35">35</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            setValue(repository.uniqueMatch(new CarrierCodeSpecification((String) getValue())));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/XStreamCarrierConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamCarrierConverter.html#17">17</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/CarrierEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/CarrierEditor.html#19">19</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public CarrierEditor(Repository&lt;Carrier&gt; repository) {
+        this.repository = repository;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/XStreamLocalDateConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamLocalDateConverter.html#24">24</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/XStreamLocalTimeConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamLocalTimeConverter.html#26">26</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return Carrier.class.equals(clazz);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Object fromString(String executedBy) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/SortedAirportList.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/SortedAirportList.html#78">78</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/DojoController.java</td><td><a href="./xref/com/xebia/dreizen/util/DojoController.html#69">69</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                builder.append(&quot;\&quot;&quot;).append(nationality.getCode()).append(&quot;\&quot;:\&quot;&quot;).append(nationality.getDescription()).append(&quot;\&quot;&quot;);
+
+            }
+            builder.append(&quot;}&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightBooker.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightBooker.html#35">35</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchResultController.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchResultController.html#69">69</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    @Override
+    protected void initBinder(HttpServletRequest request, ServletRequestDataBinder binder) throws Exception {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#483">483</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#643">643</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            Map params = new HashMap();
+            params.put(&quot;PIN_TAE_ID&quot;, tfxTransactionId);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#80">80</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#118">118</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    void checkDepartureDate(Errors errors, FlightSearchCriteria flightSearchCriteria) {
+        if (!errors.hasFieldErrors(&quot;criteria.departureDate&quot;)) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#297">297</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#344">344</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>      properties.put(&quot;departFrom&quot;, new PropertyGetter&lt;Flight&gt;(false) {
+
+        @Override
+        public Object getProperty(Flight obj) {
+          return obj.getDepartureLeg().getDepartFrom().getName();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#201">201</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#202">202</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        getReturnLeg().getSegments().get(0).getFlightNr(), rhs.getReturnLeg().getSegments().get(0).getFlightNr()).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#119">119</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteria.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteria.html#81">81</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public PartyNumbers getPartyNumbers() {
+        return partyNumbers;
+    }
+
+    public void setPartyNumbers(PartyNumbers party) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#150">150</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#68">68</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                result = code.equals(other.code);
+            }
+        }
+        return result;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int hashCode() {
+        return this.code != null ? this.code.hashCode() : 0;</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#149">149</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/CarrierCodeSpecification.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CarrierCodeSpecification.html#31">31</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (this.code != null) {
+            result = this.code.equals(carrier.getCode());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#92">92</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/Nationality.java</td><td><a href="./xref/com/xebia/dreizen/customer/Nationality.html#20">20</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    /**
+     * A {@link Nationality} matches the given &lt;code&gt;criterium&lt;/code&gt; whenever
+     * it matches the start of the {@link #code} or {@link #description} ignoring case.
+     */
+    public boolean matches(String criterium) {
+        boolean match = false;
+        
+        if (isNotEmpty(criterium)) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/LessThanSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/LessThanSpecification.html#25">25</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/ILikeSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/ILikeSpecification.html#18">18</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public ILikeSpecification(String field, String value) {
+        super(field);
+        this.value = value;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/XStreamDateTimeConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamDateTimeConverter.html#35">35</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/XStreamCarrierConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamCarrierConverter.html#34">34</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return repository.uniqueMatch(new CarrierCodeSpecification(executedBy));
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String toString(Object object) {
+        return object instanceof Carrier ? ((Carrier) object).getCode() : null;</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/XStreamDateTimeConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamDateTimeConverter.html#23">23</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/XStreamCarrierConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamCarrierConverter.html#24">24</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    @SuppressWarnings(&quot;unchecked&quot;)
+    public boolean canConvert(Class clazz) {
+        return Carrier.class.equals(clazz);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/XStreamLocalDateConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamLocalDateConverter.html#34">34</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/XStreamCarrierConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamCarrierConverter.html#34">34</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return repository.uniqueMatch(new CarrierCodeSpecification(executedBy));
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String toString(Object object) {
+        return object instanceof Carrier ? ((Carrier) object).getCode() : null;</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/XStreamLocalDateConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamLocalDateConverter.html#22">22</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/XStreamCarrierConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamCarrierConverter.html#24">24</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    @SuppressWarnings(&quot;unchecked&quot;)
+    public boolean canConvert(Class clazz) {
+        return Carrier.class.equals(clazz);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#118">118</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#122">122</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    private static boolean isNumericType(HSSFCell cell) {
+        return cell.getCellType() == HSSFCell.CELL_TYPE_NUMERIC;</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/BookFlightValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/BookFlightValidator.html#29">29</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/DojoController.java</td><td><a href="./xref/com/xebia/dreizen/util/DojoController.html#88">88</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void setNationalityRepository(NationalityRepository nationalityRepository) {
+        this.nationalityRepository = nationalityRepository;
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/SortedAirportList.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/SortedAirportList.html#75">75</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/DojoController.java</td><td><a href="./xref/com/xebia/dreizen/util/DojoController.html#65">65</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                if (i &gt; 0) {
+                    builder.append(&quot;,&quot;);
+                }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightRefiner.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRefiner.html#42">42</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightRefiner.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRefiner.html#54">54</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (flightRefinements.getArrivalTime() != null) {
+            specification = specification.and(lessThanEqualsToSpecification(&quot;departureLeg.arrivalTime&quot;, flightRefinements.getArrivalTime()));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightRefiner.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRefiner.html#28">28</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightBooker.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightBooker.html#86">86</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void setFlightRepository(Repository&lt;Flight&gt; flightRepository) {
+        this.flightRepository = flightRepository;
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#51">51</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#59">59</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    void checkDepartFrom(Errors errors, FlightSearchCriteria flightSearchCriteria) {
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, &quot;criteria.departFrom&quot;, &quot;lijndiensten.departFrom.required&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#310">310</a></td></tr><tr class="a"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#187">187</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return obj.getDeparturePlace();
+      }
+      
+    });
+    
+    properties.put(&quot;carrier&quot;, new PropertyGetter&lt;FlightTicketOffer&gt;() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#227">227</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#221">221</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return getFirstSegment().getDepartFrom();
+    }
+
+    /**
+     * Gets the destination airport for this leg.
+     * 
+     * @return the destination airport for this leg.
+     */
+    public Airport getFlyTo() {
+        return getLastSegment().getFlyTo();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#205">205</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#277">277</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return days.getDays();
+    }
+    
+    public String toString() {
+      return new ToStringBuilder(this, ToStringStyle.SIMPLE_STYLE).append(&quot;legNumber&quot;, legNumber).append(&quot;flightSequenceNr&quot;, flightSequenceNr).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.html#42">42</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.html#44">44</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            airports.add(new Airport(&quot;EIN&quot;, &quot;Eindhoven&quot;, &quot;Nederland&quot;));
+            airports.add(new Airport(new Long(726), &quot;NRT&quot;, &quot;Tokyo Narita&quot;, &quot;Japan&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/bb/FlightTicketOfferController.java</td><td><a href="./xref/com/xebia/dreizen/bb/FlightTicketOfferController.html#31">31</a></td></tr><tr class="a"><td>com/xebia/dreizen/bb/FlighTicketOffersView.java</td><td><a href="./xref/com/xebia/dreizen/bb/FlighTicketOffersView.html#22">22</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>  protected void renderMergedOutputModel(Map map, HttpServletRequest request, HttpServletResponse response) throws Exception {
+    // get the model from the map passed created by the controller
+    List&lt;FlightTicketOffer&gt; flightOffers = (List&lt;FlightTicketOffer&gt;) map.get(FlightTicketOfferController.MODELNAME);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/customer/Nationality.java</td><td><a href="./xref/com/xebia/dreizen/customer/Nationality.html#30">30</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/Nationality.java</td><td><a href="./xref/com/xebia/dreizen/customer/Nationality.html#30">30</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            match = code.toUpperCase().startsWith(criterium.toUpperCase()) || description.toUpperCase().startsWith(criterium.toUpperCase());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#100">100</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#105">105</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                dateEditor = new JodaLocalDateEditor(&quot;dd/MM/yyyy&quot;);
+                try {
+                    dateEditor.setAsText(cellValue);
+                } catch (IllegalArgumentException e2) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#40">40</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#58">58</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            result = Integer.parseInt(cell.getStringCellValue());
+        } else if (isNumericType(cell)) {
+            result = (int) cell.getNumericCellValue();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/BookerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/BookerValidator.html#108">108</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/CustomerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CustomerValidator.html#59">59</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            rejectRequired(errors, dayOfBirthField(), dayOfBirthErrorPrefix());
+        }
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/SortedAirportList.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/SortedAirportList.html#78">78</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/DojoController.java</td><td><a href="./xref/com/xebia/dreizen/util/DojoController.html#69">69</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                builder.append(&quot;\&quot;&quot;).append(nationality.getCode()).append(&quot;\&quot;:\&quot;&quot;).append(nationality.getDescription()).append(&quot;\&quot;&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/AirportRowMapper.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/AirportRowMapper.html#26">26</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/tfv/NationalityRowMapper.java</td><td><a href="./xref/com/xebia/dreizen/customer/tfv/NationalityRowMapper.html#24">24</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Nationality mapRow(ResultSet rs, int rowNum) throws SQLException {
+        return new Nationality(rs.getString(&quot;CODE&quot;), rs.getString(&quot;NATIONALITEIT&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#478">478</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#635">635</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIV_VERTREKRADIUS_IND&quot;, Types.VARCHAR));
+        }
+
+        @SuppressWarnings(&quot;unchecked&quot;)
+        void execute(long tfxTransactionId, int legNr, String departFrom, LocalDate date, String flyTo) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#477">477</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#625">625</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            super(ds, &quot;tfx_ps_ldt.p_m_paramvlt&quot;);
+
+            declareParameter(new SqlParameter(&quot;PIN_TAE_ID&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#444">444</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#482">482</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        void execute(long tfxTransactionId) {
+            Map params = new HashMap();
+            params.put(&quot;PIN_TAE_ID&quot;, tfxTransactionId);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#379">379</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#550">550</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIN_AMOUNT_OF_PUBL_FARES_MB&quot;, Types.NUMERIC));
+        }
+
+        @SuppressWarnings(&quot;unchecked&quot;)
+        public void execute(long tfxTransactionId, FlightSearchCriteria criteria) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#161">161</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.html#45">45</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        Flight flight = getFlight(sorteerKenmerk, flightLeg.getFlightSequenceNr());
+        if (flight == null) {
+            LOG.warn(&quot;Cannot add leg to flight&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#244">244</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#253">253</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public boolean getHasIntermediateStops() {
+        for (FlightSegment segment : segments) {
+            if (segment.getNrOfStops() &gt; 0) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#319">319</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#338">338</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>          return obj.getDepartureLeg().getDepartFrom().getName();
+        }
+
+      });
+
+      // departure date
+      properties.put(&quot;flyTo&quot;, new PropertyGetter&lt;Flight&gt;(false) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#306">306</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#334">334</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>      properties.put(&quot;departFrom&quot;, new PropertyGetter&lt;Flight&gt;(false) {
+
+        @Override
+        public Object getProperty(Flight obj) {
+          return obj.getDepartureLeg().getDepartFrom().getName();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/BaseEntityRepository.java</td><td><a href="./xref/com/xebia/dreizen/domain/BaseEntityRepository.html#29">29</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/BaseEntityRepository.java</td><td><a href="./xref/com/xebia/dreizen/domain/BaseEntityRepository.html#46">46</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    @SuppressWarnings(&quot;unchecked&quot;)
+    public List&lt;T&gt; findMatching(Specification specification) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/JodaLocalDateEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/JodaLocalDateEditor.html#49">49</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/GenderEditor.java</td><td><a href="./xref/com/xebia/dreizen/customer/GenderEditor.html#20">20</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    @Override
+    public void setAsText(String text) throws IllegalArgumentException {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#75">75</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#77">77</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        } else if (isNumericType(cell)) {
+            result = new BigDecimal(cell.getNumericCellValue());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/BookFlightValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/BookFlightValidator.html#29">29</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/CustomerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CustomerValidator.html#28">28</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public CustomerValidator(NationalityRepository nationalityRepository) {
+        this.nationalityRepository = nationalityRepository;
+    }
+
+    public void validate(Customer customer, Errors errors) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightRefiner.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRefiner.html#42">42</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightRefiner.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRefiner.html#51">51</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (flightRefinements.getSuppliers() != null) {
+            specification = specification.and(getSuppiersSpecification(flightRefinements.getSuppliers()));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/AirportRowMapper.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/AirportRowMapper.html#27">27</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/tfv/NationalityRowMapper.java</td><td><a href="./xref/com/xebia/dreizen/customer/tfv/NationalityRowMapper.html#25">25</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return new Nationality(rs.getString(&quot;CODE&quot;), rs.getString(&quot;NATIONALITEIT&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#379">379</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#478">478</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlOutParameter(&quot;PON_AANTAL&quot;, Types.NUMERIC));
+        }
+
+        @SuppressWarnings(&quot;unchecked&quot;)</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightRestrictions.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRestrictions.html#50">50</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightRestrictions.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRestrictions.html#55">55</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        return new AndSpecification(lhs, rhs);
+    }
+
+    @SuppressWarnings(&quot;unchecked&quot;)
+    public Specification&lt;Flight&gt; lessThan(String field, BigInteger value) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#46">46</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/CarrierCodeSpecification.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CarrierCodeSpecification.html#22">22</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public CarrierCodeSpecification(String code) {
+        this.code = code;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public boolean isSatisfiedBy(Carrier carrier) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSegment.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSegment.html#304">304</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchForm.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchForm.html#107">107</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        this.departFrom = departFrom;
+    }
+
+    public Airport getFlyTo() {
+        return flyTo;
+    }
+
+    public void setFlyTo(Airport flyTo) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#253">253</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#254">254</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    addToTotalTravelAmount(multiply(numberOfBabies, ticket.getBabyFare()));
+    addToTotalTravelAmount(multiply(numberOfBabies, ticket.getBabyTax()));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#251">251</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#252">252</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    addToTotalTravelAmount(multiply(numberOfChildren, ticket.getChildFare()));
+    addToTotalTravelAmount(multiply(numberOfChildren, ticket.getChildTax()));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#206">206</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#80">80</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+    
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SIMPLE_STYLE).append(name).append(code).toString();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#200">200</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#217">217</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    return new HashCodeBuilder().append(getCarrier().getCode()).append(getDepartureLeg().getSegments().get(0).getFlightNr()).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#175">175</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#72">72</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public static BigDecimal getBigDecimalValue(HSSFCell cell) {
+        BigDecimal result = new BigDecimal(0);
+
+        if (isStringType(cell)) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#66">66</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/CarrierCodeSpecification.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CarrierCodeSpecification.html#22">22</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public CarrierCodeSpecification(String code) {
+        this.code = code;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public boolean isSatisfiedBy(Carrier carrier) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#38">38</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#37">37</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Carrier(String code, String name) {
+        this.code = code;
+        this.name = name;</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#38">38</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#52">52</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Airport(Long id, String code, String name, String country) {
+        this.id = id;</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.html#41">41</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.html#42">42</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            airports.add(new Airport(new Long(726), &quot;NRT&quot;, &quot;Tokyo Narita&quot;, &quot;Japan&quot;));
+            airports.add(new Airport(new Long(162), &quot;BKK&quot;, &quot;Bankok&quot;, &quot;China&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/bb/FlightTicketOfferController.java</td><td><a href="./xref/com/xebia/dreizen/bb/FlightTicketOfferController.html#36">36</a></td></tr><tr class="a"><td>com/xebia/dreizen/bb/FlightTicketOfferController.java</td><td><a href="./xref/com/xebia/dreizen/bb/FlightTicketOfferController.html#38">38</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    flightTicketOffers.add(new FlightTicketOffer(3, &quot;Heathrow&quot;, &quot;London&quot;, &quot;Groot Britannie&quot;, &quot;Amsterdam&quot;, &quot;Lufthansa&quot;, 200.0, new LocalDate(),</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/LessThanSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/LessThanSpecification.html#27">27</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/EqualsSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/EqualsSpecification.html#34">34</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        this.value = value;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @SuppressWarnings(&quot;unchecked&quot;)</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/ResourceNotAvailableException.java</td><td><a href="./xref/com/xebia/dreizen/ResourceNotAvailableException.html#22">22</a></td></tr><tr class="a"><td>com/xebia/dreizen/NonUniqueResultException.java</td><td><a href="./xref/com/xebia/dreizen/NonUniqueResultException.html#25">25</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public NonUniqueResultException(String msg) {
+        super(msg);
+    }
+
+}</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/converters/JodaLocalDateEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/JodaLocalDateEditor.html#50">50</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/CarrierEditor.java</td><td><a href="./xref/com/xebia/dreizen/converters/CarrierEditor.html#33">33</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void setAsText(String carrierCode) throws IllegalArgumentException {
+        if (!StringUtils.isBlank(carrierCode)) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/DojoController.java</td><td><a href="./xref/com/xebia/dreizen/util/DojoController.html#51">51</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/DojoController.java</td><td><a href="./xref/com/xebia/dreizen/util/DojoController.html#74">74</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            writeJsonArray(builder.toString(), httpServletResponse.getWriter());
+        }
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#77">77</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#96">96</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (isNumericType(cell)) {
+            result = new LocalDate(cell.getDateCellValue());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/CustomerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CustomerValidator.html#28">28</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/DojoController.java</td><td><a href="./xref/com/xebia/dreizen/util/DojoController.html#88">88</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void setNationalityRepository(NationalityRepository nationalityRepository) {
+        this.nationalityRepository = nationalityRepository;
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/BookerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/BookerValidator.html#105">105</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/CustomerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CustomerValidator.html#57">57</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    protected void checkDayOfBirth(Customer customer, Errors errors) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/BookFlightValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/BookFlightValidator.html#75">75</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/BookFlightValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/BookFlightValidator.html#79">79</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        errors.rejectValue(field, &quot;lijndiensten.bookFlight.booker.invalid&quot;, new String[] {argument}, argument + &quot; is ongeldig.&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightBooker.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightBooker.html#39">39</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchResultController.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchResultController.html#72">72</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        binder.registerCustomEditor(LocalDate.class, &quot;criteria.returnDate&quot;, new JodaLocalDateEditor(&quot;dd-MM-yyyy&quot;));
+        binder.registerCustomEditor(LocalDate.class, &quot;criteria.departureDate&quot;, new JodaLocalDateEditor(&quot;dd-MM-yyyy&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/JdbcAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/JdbcAirportRepository.html#52">52</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/tfv/JdbcNationalityRepository.java</td><td><a href="./xref/com/xebia/dreizen/customer/tfv/JdbcNationalityRepository.html#31">31</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public JdbcNationalityRepository(SimpleJdbcTemplate simpleJdbcTemplate) {
+        this.simpleJdbcTemplate = simpleJdbcTemplate;
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/JdbcAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/JdbcAirportRepository.html#45">45</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/xml/XmlFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/xml/XmlFlightRepository.html#91">91</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void initialize() {
+        synchronized (this) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#701">701</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/tfv/NationalityRowMapper.java</td><td><a href="./xref/com/xebia/dreizen/customer/tfv/NationalityRowMapper.html#24">24</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Airport mapRow(ResultSet rs, int rowNum) throws SQLException {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#546">546</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#632">632</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIN_VERTREKDAT_MINMARGE&quot;, Types.NUMERIC));
+            declareParameter(new SqlParameter(&quot;PIV_AANKOMSTRADIUS_IND&quot;, Types.VARCHAR));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#545">545</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#634">634</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIV_AANKOMSTRADIUS_IND&quot;, Types.VARCHAR));
+            declareParameter(new SqlParameter(&quot;PIV_VERTREKRADIUS_IND&quot;, Types.VARCHAR));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#542">542</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#633">633</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIN_CAR_ID&quot;, Types.NUMERIC));
+            declareParameter(new SqlParameter(&quot;PIN_AMOUNT_NETFARES_ZB&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#535">535</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#541">541</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIV_OVERIGE_VLUCHT_IND&quot;, Types.VARCHAR));
+            declareParameter(new SqlParameter(&quot;PIN_CAR_ID&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#532">532</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#632">632</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIN_VOLWASSENEN&quot;, Types.NUMERIC));
+            declareParameter(new SqlParameter(&quot;PIN_KINDEREN&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#531">531</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#538">538</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIV_ENKELE_REIS_IND&quot;, Types.VARCHAR));
+            declareParameter(new SqlParameter(&quot;PIV_FIXEDSTAY_IND&quot;, Types.VARCHAR));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#526">526</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#630">630</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIN_CLASSMIX&quot;, Types.NUMERIC));
+            declareParameter(new SqlParameter(&quot;PIN_ADD_QSURCHARGE_TO_FARE&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#525">525</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#545">545</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIV_CORP_FARE_ACCESS_CODE&quot;, Types.VARCHAR));
+            declareParameter(new SqlParameter(&quot;PIN_CLASSMIX&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#519">519</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#549">549</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIN_PUB_INCLUDES_CORP_FARES_MB&quot;, Types.NUMERIC));
+            declareParameter(new SqlParameter(&quot;PIN_PUB_INCLUDES_NEGO_FARES_MB&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#446">446</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#643">643</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            Map params = new HashMap();
+            params.put(&quot;PIN_TAE_ID&quot;, tfxTransactionId);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#438">438</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#520">520</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIN_AMOUNT_OF_FARES&quot;, Types.NUMERIC));
+            declareParameter(new SqlParameter(&quot;PIN_MAXIMUM_FARES&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#437">437</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#672">672</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIN_TAE_ID&quot;, Types.NUMERIC));
+            declareParameter(new SqlOutParameter(&quot;PON_AANTAL&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#433">433</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#546">546</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlOutParameter(&quot;PON_TAE_ID&quot;, Types.NUMERIC));
+            declareParameter(new SqlParameter(&quot;PIN_TIMEOUT_PARALLEL&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#407">407</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#459">459</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            Number id = (Number) outParams.get(&quot;PON_TAE_ID&quot;);
+            return id.longValue();
+        }
+    }
+
+    /**
+     * Class that implements the stored procedure call to close a search operation &quot;transaction&quot;.
+     * parameters.
+     * 
+     */
+    static class CloseTransactionProc extends StoredProcedure {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#396">396</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#679">679</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            Map params = new HashMap();
+            params.put(&quot;PIN_SSE_ID&quot;, tfxSessionId);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#375">375</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#536">536</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIV_FILL_WITH_PUBLISHED&quot;, Types.VARCHAR));
+            declareParameter(new SqlParameter(&quot;PIN_PUB_INCLUDES_CORP_FARES_MB&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#374">374</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#633">633</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIN_SSE_ID&quot;, Types.NUMERIC));
+            declareParameter(new SqlParameter(&quot;PIN_TIMER&quot;, Types.NUMERIC));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#373">373</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#531">531</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIV_LOGON_FORM&quot;, Types.VARCHAR));
+            declareParameter(new SqlParameter(&quot;PIV_START_FORM&quot;, Types.VARCHAR));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#371">371</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#372">372</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            declareParameter(new SqlParameter(&quot;PIN_PTR_ID&quot;, Types.NUMERIC));
+            declareParameter(new SqlParameter(&quot;PIV_LOGON_FORM&quot;, Types.VARCHAR));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#171">171</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#174">174</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                        ticket.setChildTax(tax);
+                    } else if (passengerType.equals(&quot;INF&quot;)) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#49">49</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXSearchFlightResultHandlers.html#25">25</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>class TFXSearchFlightResultHandlers {
+
+    private static final Logger LOG = Logger.getLogger(TFXSearchFlightResultHandlers.class);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightRestrictions.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRestrictions.html#59">59</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/BaseSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/BaseSpecification.html#49">49</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    private Specification lessThanEqualsToSpecification(String field, Comparable value) {
+        return new LessThanSpecification(field, value).or(new EqualsSpecification(field, value));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#67">67</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/CarrierCodeSpecification.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CarrierCodeSpecification.html#31">31</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (this.code != null) {
+            result = this.code.equals(carrier.getCode());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#50">50</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/Customer.java</td><td><a href="./xref/com/xebia/dreizen/customer/Customer.html#25">25</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Name getName() {
+        return name;
+    }
+
+    public void setName(Name name) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#40">40</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/Nationality.java</td><td><a href="./xref/com/xebia/dreizen/customer/Nationality.html#34">34</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public String getDescription() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#167">167</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#177">177</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    private FlightSegment getFirstSegment() {
+        checkSegmentsPresent();
+        return segments.get(0);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSegment.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSegment.html#301">301</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchForm.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchForm.html#100">100</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public Airport getDepartFrom() {
+        return departFrom;
+    }
+
+    public void setDepartFrom(Airport departFrom) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteria.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteria.html#75">75</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchForm.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchForm.html#110">110</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Airport getFlyTo() {
+        return flyTo;
+    }
+
+    public void setFlyTo(Airport flyTo) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteria.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteria.html#67">67</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchForm.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchForm.html#102">102</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Airport getDepartFrom() {
+        return departFrom;
+    }
+
+    public void setDepartFrom(Airport departFrom) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#334">334</a></td></tr><tr class="a"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#174">174</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    properties.put(&quot;arrivalCountry&quot;, new PropertyGetter&lt;FlightTicketOffer&gt;(false) {
+      
+      @Override
+      public Object getProperty(FlightTicketOffer obj) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#189">189</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#56">56</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean equals(Object obj) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#183">183</a></td></tr><tr class="a"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#89">89</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>  public String getCarrier() {
+    return carrier;
+  }
+
+  public void setCarrier(String carrier) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#145">145</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/EqualsSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/EqualsSpecification.html#48">48</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public boolean isSatisfiedBy(Object object) {
+        boolean result = false;
+        if (this.value != null) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#78">78</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/Customer.java</td><td><a href="./xref/com/xebia/dreizen/customer/Customer.html#25">25</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Name getName() {
+        return name;
+    }
+
+    public void setName(Name name) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#60">60</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/Nationality.java</td><td><a href="./xref/com/xebia/dreizen/customer/Nationality.html#34">34</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public String getDescription() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#44">44</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSegment.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSegment.html#263">263</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.html#38">38</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.html#39">39</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            airports.add(new Airport(&quot;VLC&quot;, &quot;Valencia&quot;, &quot;Spanje&quot;));
+            airports.add(new Airport(&quot;VEN&quot;, &quot;Barcelona&quot;, &quot;Venezuela&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.html#37">37</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.html#41">41</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            airports.add(new Airport(&quot;JFK&quot;, &quot;New York&quot;, &quot;Verenigde Staten&quot;));
+            airports.add(new Airport(new Long(77), &quot;AMS&quot;, &quot;Amsterdam&quot;, &quot;Nederland&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/bb/FlightTicketOfferController.java</td><td><a href="./xref/com/xebia/dreizen/bb/FlightTicketOfferController.html#34">34</a></td></tr><tr class="a"><td>com/xebia/dreizen/bb/FlightTicketOfferController.java</td><td><a href="./xref/com/xebia/dreizen/bb/FlightTicketOfferController.html#34">34</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    flightTicketOffers.add(new FlightTicketOffer(1, &quot;Schiphol&quot;, &quot;Amsterdam&quot;, &quot;Nederland&quot;, &quot;London&quot;, &quot;KLM&quot;, 100.0, new LocalDate(), new LocalTime(),
+        new LocalDate(), new LocalTime()));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/BaseSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/BaseSpecification.html#42">42</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/BaseSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/BaseSpecification.html#49">49</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Specification lessThanEqualsTo(String field, Comparable value) {
+        return new LessThanSpecification(field, value).or(new EqualsSpecification(field, value));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/ComparablePropertyValueSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/ComparablePropertyValueSpecification.html#38">38</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/EqualsSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/EqualsSpecification.html#50">50</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (this.value != null) {
+            BeanWrapper bw = new BeanWrapperImpl(object);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/AndSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/AndSpecification.html#24">24</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/EqualsSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/EqualsSpecification.html#35">35</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @SuppressWarnings(&quot;unchecked&quot;)
+    public boolean isSatisfiedBy(Comparable valueToTest) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/LessThanSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/LessThanSpecification.html#14">14</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/GreaterThanSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/GreaterThanSpecification.html#17">17</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>public class GreaterThanSpecification extends ComparablePropertyValueSpecification&lt;Comparable&gt; {
+
+    private Comparable value;
+
+    /**
+     * Constructs the predicate with the field and the value. For this predicate, the value must
+     * implement {@link Comparable}.
+     * 
+     * @param field the name of the field.
+     * @param value the value of the field to check against.
+     */
+    public GreaterThanSpecification(String field, Comparable value) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/OrSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/OrSpecification.html#29">29</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/EqualsSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/EqualsSpecification.html#35">35</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @SuppressWarnings(&quot;unchecked&quot;)
+    public boolean isSatisfiedBy(Comparable valueToTest) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/domain/OrSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/OrSpecification.html#15">15</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/AndSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/AndSpecification.html#15">15</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>public class AndSpecification extends BaseSpecification {
+
+    private Specification leftHandSide;
+
+    private Specification rightHandSide;
+
+    public AndSpecification(Specification lhs, Specification rhs) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/customer/NationalityRepository.java</td><td><a href="./xref/com/xebia/dreizen/customer/NationalityRepository.html#19">19</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/tfv/JdbcNationalityRepository.java</td><td><a href="./xref/com/xebia/dreizen/customer/tfv/JdbcNationalityRepository.html#35">35</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public List&lt;Nationality&gt; findMatching(String criterium) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#98">98</a></td></tr><tr class="a"><td>com/xebia/dreizen/converters/XStreamLocalDateConverter.java</td><td><a href="./xref/com/xebia/dreizen/converters/XStreamLocalDateConverter.html#31">31</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public Object fromString(String dateAsString) {
+        JodaLocalDateEditor dateEditor = new JodaLocalDateEditor(&quot;dd-MM-yyyy&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#59">59</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#96">96</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (isNumericType(cell)) {
+            result = new LocalDate(cell.getDateCellValue());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#57">57</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#75">75</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (isStringType(cell)) {
+            result = new BigDecimal(cell.getStringCellValue());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#41">41</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#96">96</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (isNumericType(cell)) {
+            result = new LocalDate(cell.getDateCellValue());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#39">39</a></td></tr><tr class="a"><td>com/xebia/dreizen/util/ExcelUtil.java</td><td><a href="./xref/com/xebia/dreizen/util/ExcelUtil.html#57">57</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (isStringType(cell)) {
+            result = Integer.parseInt(cell.getStringCellValue());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchResultController.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchResultController.html#71">71</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchResultController.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchResultController.html#72">72</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        binder.registerCustomEditor(LocalDate.class, &quot;criteria.returnDate&quot;, new JodaLocalDateEditor(&quot;dd-MM-yyyy&quot;));
+        binder.registerCustomEditor(LocalDate.class, &quot;criteria.departureDate&quot;, new JodaLocalDateEditor(&quot;dd-MM-yyyy&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/CustomerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CustomerValidator.html#50">50</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/CustomerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CustomerValidator.html#58">58</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (!errors.hasFieldErrors(dayOfBirthField()) &amp;&amp; customer.getDayOfBirth() == null) {
+            rejectRequired(errors, dayOfBirthField(), dayOfBirthErrorPrefix());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/CustomerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CustomerValidator.html#49">49</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/CustomerValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CustomerValidator.html#57">57</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    protected void checkDayOfBirth(Customer customer, Errors errors) {
+        if (!errors.hasFieldErrors(dayOfBirthField()) &amp;&amp; customer.getDayOfBirth() == null) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/CarrierCodeSpecification.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/CarrierCodeSpecification.html#29">29</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/EqualsSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/EqualsSpecification.html#48">48</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public boolean isSatisfiedBy(Object object) {
+        boolean result = false;
+        if (this.value != null) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/ReturnFlightWithMinimalCriteriaSpecification.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/ReturnFlightWithMinimalCriteriaSpecification.html#47">47</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/ReturnFlightWithMinimalCriteriaSpecification.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/ReturnFlightWithMinimalCriteriaSpecification.html#48">48</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                &amp;&amp; isSatisfiedByReturnDate(returnLeg.getDepartureDateTime().toLocalDate()) &amp;&amp; isSatisfiedByDepartFrom(departureLeg.getDepartFrom())</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightRefiner.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightRefiner.html#80">80</a></td></tr><tr class="a"><td>com/xebia/dreizen/domain/BaseSpecification.java</td><td><a href="./xref/com/xebia/dreizen/domain/BaseSpecification.html#49">49</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    private Specification lessThanEqualsToSpecification(String field, Comparable value) {
+        return new LessThanSpecification(field, value).or(new EqualsSpecification(field, value));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchForm.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchForm.html#76">76</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSequencenumberSpecification.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSequencenumberSpecification.html#29">29</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public FlightSearchCriteria getCriteria() {
+        return criteria;
+    }</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/JdbcAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/JdbcAirportRepository.html#37">37</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/tfv/JdbcNationalityRepository.java</td><td><a href="./xref/com/xebia/dreizen/customer/tfv/JdbcNationalityRepository.html#31">31</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    void setSimpleJdbcTemplate(SimpleJdbcTemplate simpleJdbcTemplate) {
+        this.simpleJdbcTemplate = simpleJdbcTemplate;</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#263">263</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#315">315</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                segment.setLegNumber(rs.getInt(&quot;LEG_NUMMER&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#260">260</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#306">306</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                segment.setAlternativeNr(rs.getInt(&quot;ATF_NUMMER&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#218">218</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#222">222</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                if (dateUntil != null) {
+                    leg.getFlightTerms().setDateUntil(new LocalDate(dateUntil));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#210">210</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#303">303</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                segment.setCarrierCode(rs.getString(&quot;CAR_CODE&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#207">207</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/TFXFlightRepository.html#315">315</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>                alternative.setLegNumber(rs.getInt(&quot;LEG_NUMMER&quot;));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Sortable.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Sortable.html#19">19</a></td></tr><tr class="a"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#145">145</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>  public Map&lt;String, PropertyGetter&gt; getSortOrder() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#246">246</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightLeg.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightLeg.html#255">255</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            if (segment.getNrOfStops() &gt; 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Returns the number of transfers for this leg.
+     * 
+     * @return
+     */
+    public Integer getNumberOfTransfers() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#105">105</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#109">109</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            } else if (flightSearchCriteria.isReturnDateToFarInFuture()) {
+                errors.rejectValue(&quot;criteria.returnDate&quot;, &quot;lijndiensten.returnDate.toFarInFuture&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#103">103</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#120">120</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            if (flightSearchCriteria.getDepartureDate() == null) {
+                errors.rejectValue(&quot;criteria.departureDate&quot;, &quot;lijndiensten.departureDate.required&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#84">84</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteriaValidator.html#93">93</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        if (flightSearchCriteria.hasMoreBabiesThanAdults()) {
+            errors.rejectValue(&quot;criteria.partyNumbers.numberOfBabies&quot;, &quot;lijndiensten.numberOfBabies.moreBabiesThanAdults&quot;);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSegment.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSegment.html#70">70</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/ReturnFlightWithMinimalCriteriaSpecification.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/ReturnFlightWithMinimalCriteriaSpecification.html#36">36</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        this.departFrom = departFrom;
+        this.flyTo = flyTo;</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteria.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteria.html#79">79</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchForm.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchForm.html#114">114</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void setFlyTo(Airport flyTo) {
+        this.flyTo = flyTo;
+    }
+
+    public List&lt;Airport&gt; getDepartureAirports() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/FlightSearchCriteria.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchCriteria.html#71">71</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSearchForm.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSearchForm.html#106">106</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void setDepartFrom(Airport departFrom) {
+        this.departFrom = departFrom;
+    }
+
+    public Airport getFlyTo() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#297">297</a></td></tr><tr class="a"><td>com/xebia/dreizen/fixtures/FlightTicketOffer.java</td><td><a href="./xref/com/xebia/dreizen/fixtures/FlightTicketOffer.html#147">147</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    properties.put(&quot;price&quot;, new PropertyGetter&lt;FlightTicketOffer&gt;() {
+
+      @Override
+      public Object getProperty(FlightTicketOffer obj) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#294">294</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Sortable.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Sortable.html#19">19</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>  public Map&lt;String, PropertyGetter&gt; getSortOrder();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#248">248</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#250">250</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    addToTotalTravelAmount(multiply(numberOfAdults, ticket.getAdultFare()));
+    addToTotalTravelAmount(multiply(numberOfAdults, ticket.getAdultTax()));</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#217">217</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#217">217</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    return new HashCodeBuilder().append(getCarrier().getCode()).append(getDepartureLeg().getSegments().get(0).getFlightNr()).append(
+        getDepartureLeg().getDepartureDateTime()).append(getReturnLeg().getDepartureDateTime()).toHashCode();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#211">211</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#72">72</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int hashCode() {
+        return this.code != null ? this.code.hashCode() : 0;</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#203">203</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#204">204</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        rhs.getReturnLeg().getDepartureDateTime()).append(getDepartureLeg().getDuration(), rhs.getDepartureLeg().getDuration()).append(
+        getReturnLeg().getDuration(), rhs.getReturnLeg().getDuration()).isEquals();</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#203">203</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#204">204</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        rhs.getReturnLeg().getDepartureDateTime()).append(getDepartureLeg().getDuration(), rhs.getDepartureLeg().getDuration()).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#202">202</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#204">204</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        rhs.getReturnLeg().getDepartureDateTime()).append(getDepartureLeg().getDuration(), rhs.getDepartureLeg().getDuration()).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#201">201</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#204">204</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        getDepartureLeg().getDepartureDateTime(), rhs.getDepartureLeg().getDepartureDateTime()).append(getReturnLeg().getDepartureDateTime(),</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#200">200</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Flight.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Flight.html#204">204</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        rhs.getReturnLeg().getDepartureDateTime()).append(getDepartureLeg().getDuration(), rhs.getDepartureLeg().getDuration()).append(</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#109">109</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/Nationality.java</td><td><a href="./xref/com/xebia/dreizen/customer/Nationality.html#30">30</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>            match = code.toUpperCase().startsWith(criterium.toUpperCase()) || description.toUpperCase().startsWith(criterium.toUpperCase());</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#82">82</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/Customer.java</td><td><a href="./xref/com/xebia/dreizen/customer/Customer.html#29">29</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void setName(Name name) {
+        this.name = name;
+    }
+
+    public Gender getGender() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#54">54</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/Carrier.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Carrier.html#38">38</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>        this.code = code;
+        this.name = name;</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/Airport.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/Airport.html#48">48</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/FlightSegment.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/FlightSegment.html#267">267</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getKey() {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryCarrierRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryCarrierRepository.html#33">33</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/tfx/JdbcAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/tfx/JdbcAirportRepository.html#45">45</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void initialize() {
+        synchronized (this) {</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryNationalityRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryNationalityRepository.html#38">38</a></td></tr><tr class="a"><td>com/xebia/dreizen/customer/NationalityRepository.java</td><td><a href="./xref/com/xebia/dreizen/customer/NationalityRepository.html#19">19</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public List&lt;Nationality&gt; findMatching(String criterium);</pre></div></td></tr><table class="bodyTable"></p><p><table class="bodyTable"><tr class="a"><th>File</th><th>Line</th></tr><tr class="b"><td>com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/mock/InMemoryAirportRepository.html#33">33</a></td></tr><tr class="a"><td>com/xebia/dreizen/lijndiensten/xml/XmlFlightRepository.java</td><td><a href="./xref/com/xebia/dreizen/lijndiensten/xml/XmlFlightRepository.html#91">91</a></td></tr><tr class="b"><td colspan='2'><div class="source"><pre>    public void initialize() {
+        synchronized (this) {</pre></div></td></tr><table class="bodyTable"></p></div>
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2006-2007
+    
+          Xebia BV, the Netherlands
+          
+  
+
+  
+    
+  
+  
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

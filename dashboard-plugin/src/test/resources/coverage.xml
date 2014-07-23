@@ -1,0 +1,1293 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-02.dtd">
+
+<coverage line-rate="0.9101449275362319" branch-rate="0.92" version="1.8" timestamp="1180820881011">
+    <sources>
+        <source>--source</source>
+        <source>/home/lars/workspaces/xebia-mojos/maven-dashboard-plugin/src/main/java</source>
+    </sources>
+    <packages>
+        <package name="com.xebia.mojo.dashboard" line-rate="0.9724770642201835" branch-rate="0.9166666666666666" complexity="1.4137931034482758">
+            <classes>
+                <class name="com.xebia.mojo.dashboard.DashboardMojo" filename="com/xebia/mojo/dashboard/DashboardMojo.java" line-rate="0.963855421686747" branch-rate="0.8571428571428571" complexity="1.4761904761904763">
+                    <methods>
+                        <method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="79" hits="6" branch="false"/>
+                                <line number="82" hits="6" branch="false"/>
+                                <line number="83" hits="6" branch="false"/>
+                                <line number="84" hits="6" branch="false"/>
+                                <line number="85" hits="6" branch="false"/>
+                                <line number="86" hits="6" branch="false"/>
+                                <line number="87" hits="6" branch="false"/>
+                                <line number="88" hits="6" branch="false"/>
+                                <line number="89" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="49" hits="66" branch="false"/>
+                                <line number="99" hits="30" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="access$0" signature="(Lcom/xebia/mojo/dashboard/DashboardMojo;Lorg/dom4j/Element;Ljava/lang/String;I)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="221" hits="234" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="access$1" signature="(Lcom/xebia/mojo/dashboard/DashboardMojo;Lorg/dom4j/Element;Ljava/lang/String;)Lorg/dom4j/Element;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="226" hits="66" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="access$2" signature="(Lcom/xebia/mojo/dashboard/DashboardMojo;Lorg/dom4j/Element;Ljava/lang/String;Lorg/dom4j/Node;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="238" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="createLink" signature="(Lorg/dom4j/Element;Ljava/lang/String;Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="245" hits="24" branch="false"/>
+                                <line number="246" hits="24" branch="false"/>
+                                <line number="247" hits="24" branch="false"/>
+                                <line number="248" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="createLink" signature="(Lorg/dom4j/Element;Ljava/lang/String;Lorg/dom4j/Node;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="239" hits="6" branch="false"/>
+                                <line number="240" hits="6" branch="false"/>
+                                <line number="241" hits="6" branch="false"/>
+                                <line number="242" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="createProjectNameCell" signature="(Lorg/apache/maven/project/MavenProject;Lorg/dom4j/Element;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="217" hits="24" branch="false"/>
+                                <line number="218" hits="24" branch="false"/>
+                                <line number="219" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="createProjectRow" signature="(Lorg/dom4j/Element;Lorg/apache/maven/project/MavenProject;I)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="191" hits="24" branch="false"/>
+                                <line number="192" hits="24" branch="true"/>
+                                <line number="193" hits="24" branch="false"/>
+                                <line number="194" hits="24" branch="false"/>
+                                <line number="195" hits="24" branch="false"/>
+                                <line number="214" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="createTableCell" signature="(Lorg/dom4j/Element;Ljava/lang/String;)Lorg/dom4j/Element;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="227" hits="90" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="createTableHeaderCell" signature="(Lorg/dom4j/Element;Ljava/lang/String;I)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="222" hits="282" branch="false"/>
+                                <line number="223" hits="282" branch="false"/>
+                                <line number="224" hits="282" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="createTablePart" signature="(Lorg/dom4j/Element;Ljava/lang/String;Ljava/lang/String;)Lorg/dom4j/Element;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="231" hits="372" branch="false"/>
+                                <line number="232" hits="372" branch="true"/>
+                                <line number="233" hits="336" branch="false"/>
+                                <line number="235" hits="372" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="doWithReports" signature="(Lcom/xebia/mojo/dashboard/DashboardMojo$ReportCallback;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="134" hits="72" branch="true"/>
+                                <line number="135" hits="180" branch="true"/>
+                                <line number="136" hits="144" branch="false"/>
+                                <line number="139" hits="90" branch="true"/>
+                                <line number="140" hits="36" branch="false"/>
+                                <line number="143" hits="72" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="execute" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="112" hits="24" branch="false"/>
+                                <line number="113" hits="24" branch="false"/>
+                                <line number="115" hits="24" branch="false"/>
+                                <line number="116" hits="24" branch="false"/>
+                                <line number="117" hits="24" branch="false"/>
+                                <line number="118" hits="24" branch="false"/>
+                                <line number="119" hits="24" branch="false"/>
+                                <line number="120" hits="24" branch="false"/>
+                                <line number="122" hits="24" branch="false"/>
+                                <line number="123" hits="24" branch="false"/>
+                                <line number="125" hits="24" branch="false"/>
+                                <line number="126" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="generateContent" signature="(Lorg/dom4j/Element;)V" line-rate="0.5714285714285714" branch-rate="0.5">
+                            <lines>
+                                <line number="173" hits="24" branch="false"/>
+                                <line number="174" hits="24" branch="true"/>
+                                <line number="175" hits="24" branch="false"/>
+                                <line number="177" hits="0" branch="true"/>
+                                <line number="178" hits="0" branch="false"/>
+                                <line number="179" hits="0" branch="false"/>
+                                <line number="182" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="generateHeaders" signature="(Lorg/dom4j/Element;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="129" hits="24" branch="false"/>
+                                <line number="130" hits="24" branch="false"/>
+                                <line number="131" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="generateReportHeadersRow" signature="(Lorg/dom4j/Element;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="151" hits="24" branch="false"/>
+                                <line number="152" hits="24" branch="false"/>
+                                <line number="153" hits="24" branch="false"/>
+                                <line number="158" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="generateReportSubHeadersRow" signature="(Lorg/dom4j/Element;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="161" hits="24" branch="false"/>
+                                <line number="162" hits="24" branch="false"/>
+                                <line number="163" hits="24" branch="false"/>
+                                <line number="170" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReport" signature="(Ljava/lang/String;)Lcom/xebia/mojo/dashboard/DashboardReport;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="147" hits="18" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="newRow" signature="(Lorg/dom4j/Element;Ljava/lang/String;)Lorg/dom4j/Element;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="185" hits="48" branch="false"/>
+                                <line number="186" hits="48" branch="false"/>
+                                <line number="187" hits="48" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="setProject" signature="(Lorg/apache/maven/project/MavenProject;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="103" hits="30" branch="false"/>
+                                <line number="104" hits="30" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="setXmlUtil" signature="(Lcom/xebia/mojo/dashboard/util/XmlUtil;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="108" hits="30" branch="false"/>
+                                <line number="109" hits="30" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="49" hits="66" branch="false"/>
+                        <line number="79" hits="6" branch="false"/>
+                        <line number="82" hits="6" branch="false"/>
+                        <line number="83" hits="6" branch="false"/>
+                        <line number="84" hits="6" branch="false"/>
+                        <line number="85" hits="6" branch="false"/>
+                        <line number="86" hits="6" branch="false"/>
+                        <line number="87" hits="6" branch="false"/>
+                        <line number="88" hits="6" branch="false"/>
+                        <line number="89" hits="6" branch="false"/>
+                        <line number="99" hits="30" branch="false"/>
+                        <line number="103" hits="30" branch="false"/>
+                        <line number="104" hits="30" branch="false"/>
+                        <line number="108" hits="30" branch="false"/>
+                        <line number="109" hits="30" branch="false"/>
+                        <line number="112" hits="24" branch="false"/>
+                        <line number="113" hits="24" branch="false"/>
+                        <line number="115" hits="24" branch="false"/>
+                        <line number="116" hits="24" branch="false"/>
+                        <line number="117" hits="24" branch="false"/>
+                        <line number="118" hits="24" branch="false"/>
+                        <line number="119" hits="24" branch="false"/>
+                        <line number="120" hits="24" branch="false"/>
+                        <line number="122" hits="24" branch="false"/>
+                        <line number="123" hits="24" branch="false"/>
+                        <line number="125" hits="24" branch="false"/>
+                        <line number="126" hits="24" branch="false"/>
+                        <line number="129" hits="24" branch="false"/>
+                        <line number="130" hits="24" branch="false"/>
+                        <line number="131" hits="24" branch="false"/>
+                        <line number="134" hits="72" branch="true"/>
+                        <line number="135" hits="180" branch="true"/>
+                        <line number="136" hits="144" branch="false"/>
+                        <line number="139" hits="90" branch="true"/>
+                        <line number="140" hits="36" branch="false"/>
+                        <line number="143" hits="72" branch="false"/>
+                        <line number="147" hits="18" branch="false"/>
+                        <line number="151" hits="24" branch="false"/>
+                        <line number="152" hits="24" branch="false"/>
+                        <line number="153" hits="24" branch="false"/>
+                        <line number="158" hits="24" branch="false"/>
+                        <line number="161" hits="24" branch="false"/>
+                        <line number="162" hits="24" branch="false"/>
+                        <line number="163" hits="24" branch="false"/>
+                        <line number="170" hits="24" branch="false"/>
+                        <line number="173" hits="24" branch="false"/>
+                        <line number="174" hits="24" branch="true"/>
+                        <line number="175" hits="24" branch="false"/>
+                        <line number="177" hits="0" branch="true"/>
+                        <line number="178" hits="0" branch="false"/>
+                        <line number="179" hits="0" branch="false"/>
+                        <line number="182" hits="24" branch="false"/>
+                        <line number="185" hits="48" branch="false"/>
+                        <line number="186" hits="48" branch="false"/>
+                        <line number="187" hits="48" branch="false"/>
+                        <line number="191" hits="24" branch="false"/>
+                        <line number="192" hits="24" branch="true"/>
+                        <line number="193" hits="24" branch="false"/>
+                        <line number="194" hits="24" branch="false"/>
+                        <line number="195" hits="24" branch="false"/>
+                        <line number="214" hits="24" branch="false"/>
+                        <line number="217" hits="24" branch="false"/>
+                        <line number="218" hits="24" branch="false"/>
+                        <line number="219" hits="24" branch="false"/>
+                        <line number="221" hits="234" branch="false"/>
+                        <line number="222" hits="282" branch="false"/>
+                        <line number="223" hits="282" branch="false"/>
+                        <line number="224" hits="282" branch="false"/>
+                        <line number="226" hits="66" branch="false"/>
+                        <line number="227" hits="90" branch="false"/>
+                        <line number="231" hits="372" branch="false"/>
+                        <line number="232" hits="372" branch="true"/>
+                        <line number="233" hits="336" branch="false"/>
+                        <line number="235" hits="372" branch="false"/>
+                        <line number="238" hits="6" branch="false"/>
+                        <line number="239" hits="6" branch="false"/>
+                        <line number="240" hits="6" branch="false"/>
+                        <line number="241" hits="6" branch="false"/>
+                        <line number="242" hits="6" branch="false"/>
+                        <line number="245" hits="24" branch="false"/>
+                        <line number="246" hits="24" branch="false"/>
+                        <line number="247" hits="24" branch="false"/>
+                        <line number="248" hits="24" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.DashboardMojo$1" filename="com/xebia/mojo/dashboard/DashboardMojo.java" line-rate="1.0" branch-rate="1.0" complexity="1.4761904761904763">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="(Lcom/xebia/mojo/dashboard/DashboardMojo;Lorg/dom4j/Element;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="1" hits="24" branch="false"/>
+                                <line number="153" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="handleReport" signature="(Lcom/xebia/mojo/dashboard/DashboardReport;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="155" hits="60" branch="false"/>
+                                <line number="156" hits="60" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="1" hits="24" branch="false"/>
+                        <line number="153" hits="24" branch="false"/>
+                        <line number="155" hits="60" branch="false"/>
+                        <line number="156" hits="60" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.DashboardMojo$2" filename="com/xebia/mojo/dashboard/DashboardMojo.java" line-rate="1.0" branch-rate="1.0" complexity="1.4761904761904763">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="(Lcom/xebia/mojo/dashboard/DashboardMojo;Lorg/dom4j/Element;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="1" hits="24" branch="false"/>
+                                <line number="163" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="handleReport" signature="(Lcom/xebia/mojo/dashboard/DashboardReport;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="165" hits="234" branch="true"/>
+                                <line number="166" hits="174" branch="false"/>
+                                <line number="168" hits="60" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="1" hits="24" branch="false"/>
+                        <line number="163" hits="24" branch="false"/>
+                        <line number="165" hits="234" branch="true"/>
+                        <line number="166" hits="174" branch="false"/>
+                        <line number="168" hits="60" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.DashboardMojo$3" filename="com/xebia/mojo/dashboard/DashboardMojo.java" line-rate="1.0" branch-rate="1.0" complexity="1.4761904761904763">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="(Lcom/xebia/mojo/dashboard/DashboardMojo;Lorg/apache/maven/project/MavenProject;Lorg/dom4j/Element;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="1" hits="24" branch="false"/>
+                                <line number="195" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="handleReport" signature="(Lcom/xebia/mojo/dashboard/DashboardReport;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="197" hits="60" branch="true"/>
+                                <line number="198" hits="18" branch="true"/>
+                                <line number="199" hits="12" branch="false"/>
+                                <line number="200" hits="12" branch="false"/>
+                                <line number="201" hits="12" branch="false"/>
+                                <line number="202" hits="12" branch="true"/>
+                                <line number="203" hits="6" branch="false"/>
+                                <line number="205" hits="6" branch="false"/>
+                                <line number="209" hits="54" branch="false"/>
+                                <line number="210" hits="54" branch="false"/>
+                                <line number="212" hits="60" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="1" hits="24" branch="false"/>
+                        <line number="195" hits="24" branch="false"/>
+                        <line number="197" hits="60" branch="true"/>
+                        <line number="198" hits="18" branch="true"/>
+                        <line number="199" hits="12" branch="false"/>
+                        <line number="200" hits="12" branch="false"/>
+                        <line number="201" hits="12" branch="false"/>
+                        <line number="202" hits="12" branch="true"/>
+                        <line number="203" hits="6" branch="false"/>
+                        <line number="205" hits="6" branch="false"/>
+                        <line number="209" hits="54" branch="false"/>
+                        <line number="210" hits="54" branch="false"/>
+                        <line number="212" hits="60" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.DashboardMojo$ReportCallback" filename="com/xebia/mojo/dashboard/DashboardMojo.java" line-rate="1.0" branch-rate="1.0" complexity="1.4761904761904763">
+                    <methods>
+                    </methods>
+                    <lines>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.DashboardReport" filename="com/xebia/mojo/dashboard/DashboardReport.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+                    <methods>
+                    </methods>
+                    <lines>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.DashboardUtil" filename="com/xebia/mojo/dashboard/DashboardUtil.java" line-rate="1.0" branch-rate="1.0" complexity="2.0">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="10" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="determineCompletePath" signature="(Lorg/apache/maven/project/MavenProject;)Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="13" hits="78" branch="true"/>
+                                <line number="14" hits="18" branch="false"/>
+                                <line number="16" hits="60" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="10" hits="6" branch="false"/>
+                        <line number="13" hits="78" branch="true"/>
+                        <line number="14" hits="18" branch="false"/>
+                        <line number="16" hits="60" branch="false"/>
+                    </lines>
+                </class>
+            </classes>
+        </package>
+        <package name="com.xebia.mojo.dashboard.reports" line-rate="0.9411764705882353" branch-rate="1.0" complexity="1.1818181818181819">
+            <classes>
+                <class name="com.xebia.mojo.dashboard.reports.AbstractDashboardReport" filename="com/xebia/mojo/dashboard/reports/AbstractDashboardReport.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="17" hits="396" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="existsReportFile" signature="(Lorg/apache/maven/project/MavenProject;)Z" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="25" hits="66" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReportFile" signature="(Lorg/apache/maven/project/MavenProject;)Ljava/io/File;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="42" hits="102" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="17" hits="396" branch="false"/>
+                        <line number="25" hits="66" branch="false"/>
+                        <line number="42" hits="102" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.reports.HtmlFileXPathReport" filename="com/xebia/mojo/dashboard/reports/HtmlFileXPathReport.java" line-rate="0.9166666666666666" branch-rate="1.0" complexity="1.3333333333333333">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="([Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="26" hits="162" branch="false"/>
+                                <line number="28" hits="162" branch="false"/>
+                                <line number="29" hits="162" branch="false"/>
+                                <line number="30" hits="162" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="canExecute" signature="(Lorg/apache/maven/project/MavenProject;)Z" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="36" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="findNode" signature="(Lorg/apache/maven/project/MavenProject;Ljava/lang/String;)Lorg/dom4j/Node;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="57" hits="36" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getContent" signature="(Lorg/apache/maven/project/MavenProject;I)Lorg/dom4j/Node;" line-rate="0.75" branch-rate="1.0">
+                            <lines>
+                                <line number="50" hits="42" branch="true"/>
+                                <line number="51" hits="0" branch="false"/>
+                                <line number="52" hits="42" branch="false"/>
+                                <line number="53" hits="42" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReportingPath" signature="(Lorg/apache/maven/project/MavenProject;)Ljava/io/File;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="43" hits="72" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="postProcess" signature="(Lorg/apache/maven/project/MavenProject;Lorg/dom4j/Node;I)Lorg/dom4j/Node;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="61" hits="30" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="26" hits="162" branch="false"/>
+                        <line number="28" hits="162" branch="false"/>
+                        <line number="29" hits="162" branch="false"/>
+                        <line number="30" hits="162" branch="false"/>
+                        <line number="36" hits="24" branch="false"/>
+                        <line number="43" hits="72" branch="false"/>
+                        <line number="50" hits="42" branch="true"/>
+                        <line number="51" hits="0" branch="false"/>
+                        <line number="52" hits="42" branch="false"/>
+                        <line number="53" hits="42" branch="false"/>
+                        <line number="57" hits="36" branch="false"/>
+                        <line number="61" hits="30" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.reports.XmlFileXpathReport" filename="com/xebia/mojo/dashboard/reports/XmlFileXpathReport.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="7" hits="234" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReportingPath" signature="(Lorg/apache/maven/project/MavenProject;)Ljava/io/File;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="13" hits="30" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="7" hits="234" branch="false"/>
+                        <line number="13" hits="30" branch="false"/>
+                    </lines>
+                </class>
+            </classes>
+        </package>
+        <package name="com.xebia.mojo.dashboard.reports.html" line-rate="0.8641975308641975" branch-rate="0.8333333333333334" complexity="1.935483870967742">
+            <classes>
+                <class name="com.xebia.mojo.dashboard.reports.html.CheckstyleDashboardReport" filename="com/xebia/mojo/dashboard/reports/html/CheckstyleDashboardReport.java" line-rate="0.625" branch-rate="0.0" complexity="2.2857142857142856">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="28" hits="6" branch="false"/>
+                                <line number="29" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getHeaderForColumn" signature="(I)Ljava/lang/String;" line-rate="0.8333333333333334" branch-rate="1.0">
+                            <lines>
+                                <line number="42" hits="24" branch="false"/>
+                                <line number="44" hits="6" branch="false"/>
+                                <line number="46" hits="6" branch="false"/>
+                                <line number="48" hits="6" branch="false"/>
+                                <line number="50" hits="6" branch="false"/>
+                                <line number="52" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getLinkLocation" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0">
+                            <lines>
+                                <line number="80" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReportFileName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="60" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="numberOfColumns" signature="()I" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="35" hits="42" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="postProcess" signature="(Lorg/apache/maven/project/MavenProject;Lorg/dom4j/Node;I)Lorg/dom4j/Node;" line-rate="0.0" branch-rate="0.0">
+                            <lines>
+                                <line number="67" hits="0" branch="false"/>
+                                <line number="68" hits="0" branch="true"/>
+                                <line number="69" hits="0" branch="false"/>
+                                <line number="72" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="title" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="76" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="28" hits="6" branch="false"/>
+                        <line number="29" hits="6" branch="false"/>
+                        <line number="35" hits="42" branch="false"/>
+                        <line number="42" hits="24" branch="false"/>
+                        <line number="44" hits="6" branch="false"/>
+                        <line number="46" hits="6" branch="false"/>
+                        <line number="48" hits="6" branch="false"/>
+                        <line number="50" hits="6" branch="false"/>
+                        <line number="52" hits="0" branch="false"/>
+                        <line number="60" hits="6" branch="false"/>
+                        <line number="67" hits="0" branch="false"/>
+                        <line number="68" hits="0" branch="true"/>
+                        <line number="69" hits="0" branch="false"/>
+                        <line number="72" hits="0" branch="false"/>
+                        <line number="76" hits="6" branch="false"/>
+                        <line number="80" hits="0" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.reports.html.CloverDashboardReport" filename="com/xebia/mojo/dashboard/reports/html/CloverDashboardReport.java" line-rate="0.9473684210526315" branch-rate="1.0" complexity="1.8181818181818181">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="28" hits="42" branch="false"/>
+                                <line number="29" hits="42" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="applyColours" signature="(Lorg/dom4j/Node;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="81" hits="6" branch="false"/>
+                                <line number="82" hits="6" branch="false"/>
+                                <line number="83" hits="6" branch="false"/>
+                                <line number="84" hits="6" branch="true"/>
+                                <line number="85" hits="6" branch="false"/>
+                                <line number="87" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="changeImageSrc" signature="(Lorg/apache/maven/project/MavenProject;Lorg/dom4j/Node;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="90" hits="6" branch="false"/>
+                                <line number="91" hits="18" branch="true"/>
+                                <line number="92" hits="12" branch="false"/>
+                                <line number="93" hits="12" branch="true"/>
+                                <line number="94" hits="12" branch="false"/>
+                                <line number="95" hits="12" branch="false"/>
+                                <line number="96" hits="12" branch="false"/>
+                                <line number="99" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="createLinkableContent" signature="(Lorg/apache/maven/project/MavenProject;Lorg/dom4j/Node;I)Lorg/dom4j/Node;" line-rate="0.8571428571428571" branch-rate="1.0">
+                            <lines>
+                                <line number="54" hits="12" branch="false"/>
+                                <line number="56" hits="6" branch="false"/>
+                                <line number="58" hits="6" branch="false"/>
+                                <line number="59" hits="6" branch="false"/>
+                                <line number="60" hits="6" branch="false"/>
+                                <line number="61" hits="6" branch="false"/>
+                                <line number="63" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getHeaderForColumn" signature="(I)Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="35" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getLinkLocation" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0">
+                            <lines>
+                                <line number="106" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReportFileName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="46" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="numberOfColumns" signature="()I" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="42" hits="30" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="postProcess" signature="(Lorg/apache/maven/project/MavenProject;Lorg/dom4j/Node;I)Lorg/dom4j/Node;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="50" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="removeClassAttributes" signature="(Lorg/dom4j/Node;)V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="68" hits="6" branch="false"/>
+                                <line number="69" hits="6" branch="false"/>
+                                <line number="70" hits="6" branch="false"/>
+                                <line number="72" hits="6" branch="false"/>
+                                <line number="73" hits="18" branch="true"/>
+                                <line number="74" hits="12" branch="false"/>
+                                <line number="75" hits="12" branch="false"/>
+                                <line number="76" hits="12" branch="false"/>
+                                <line number="78" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="title" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="102" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="28" hits="42" branch="false"/>
+                        <line number="29" hits="42" branch="false"/>
+                        <line number="35" hits="12" branch="false"/>
+                        <line number="42" hits="30" branch="false"/>
+                        <line number="46" hits="12" branch="false"/>
+                        <line number="50" hits="12" branch="false"/>
+                        <line number="54" hits="12" branch="false"/>
+                        <line number="56" hits="6" branch="false"/>
+                        <line number="58" hits="6" branch="false"/>
+                        <line number="59" hits="6" branch="false"/>
+                        <line number="60" hits="6" branch="false"/>
+                        <line number="61" hits="6" branch="false"/>
+                        <line number="63" hits="0" branch="false"/>
+                        <line number="68" hits="6" branch="false"/>
+                        <line number="69" hits="6" branch="false"/>
+                        <line number="70" hits="6" branch="false"/>
+                        <line number="72" hits="6" branch="false"/>
+                        <line number="73" hits="18" branch="true"/>
+                        <line number="74" hits="12" branch="false"/>
+                        <line number="75" hits="12" branch="false"/>
+                        <line number="76" hits="12" branch="false"/>
+                        <line number="78" hits="6" branch="false"/>
+                        <line number="81" hits="6" branch="false"/>
+                        <line number="82" hits="6" branch="false"/>
+                        <line number="83" hits="6" branch="false"/>
+                        <line number="84" hits="6" branch="true"/>
+                        <line number="85" hits="6" branch="false"/>
+                        <line number="87" hits="6" branch="false"/>
+                        <line number="90" hits="6" branch="false"/>
+                        <line number="91" hits="18" branch="true"/>
+                        <line number="92" hits="12" branch="false"/>
+                        <line number="93" hits="12" branch="true"/>
+                        <line number="94" hits="12" branch="false"/>
+                        <line number="95" hits="12" branch="false"/>
+                        <line number="96" hits="12" branch="false"/>
+                        <line number="99" hits="6" branch="false"/>
+                        <line number="102" hits="12" branch="false"/>
+                        <line number="106" hits="0" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.reports.html.CpdDashboardReport" filename="com/xebia/mojo/dashboard/reports/html/CpdDashboardReport.java" line-rate="0.9333333333333333" branch-rate="1.0" complexity="1.4285714285714286">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="26" hits="42" branch="false"/>
+                                <line number="27" hits="42" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="findNode" signature="(Lorg/apache/maven/project/MavenProject;Ljava/lang/String;)Lorg/dom4j/Node;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="35" hits="12" branch="false"/>
+                                <line number="36" hits="12" branch="false"/>
+                                <line number="37" hits="12" branch="false"/>
+                                <line number="38" hits="12" branch="true"/>
+                                <line number="39" hits="12" branch="false"/>
+                                <line number="41" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getHeaderForColumn" signature="(I)Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="62" hits="18" branch="false"/>
+                                <line number="64" hits="12" branch="false"/>
+                                <line number="66" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getLinkLocation" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0">
+                            <lines>
+                                <line number="75" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReportFileName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="48" hits="18" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="numberOfColumns" signature="()I" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="55" hits="24" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="title" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="71" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="26" hits="42" branch="false"/>
+                        <line number="27" hits="42" branch="false"/>
+                        <line number="35" hits="12" branch="false"/>
+                        <line number="36" hits="12" branch="false"/>
+                        <line number="37" hits="12" branch="false"/>
+                        <line number="38" hits="12" branch="true"/>
+                        <line number="39" hits="12" branch="false"/>
+                        <line number="41" hits="12" branch="false"/>
+                        <line number="48" hits="18" branch="false"/>
+                        <line number="55" hits="24" branch="false"/>
+                        <line number="62" hits="18" branch="false"/>
+                        <line number="64" hits="12" branch="false"/>
+                        <line number="66" hits="6" branch="false"/>
+                        <line number="71" hits="12" branch="false"/>
+                        <line number="75" hits="0" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.reports.html.SurefireDashboardReport" filename="com/xebia/mojo/dashboard/reports/html/SurefireDashboardReport.java" line-rate="0.8333333333333334" branch-rate="1.0" complexity="2.3333333333333335">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="26" hits="72" branch="false"/>
+                                <line number="27" hits="72" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getHeaderForColumn" signature="(I)Ljava/lang/String;" line-rate="0.8333333333333334" branch-rate="1.0">
+                            <lines>
+                                <line number="45" hits="48" branch="false"/>
+                                <line number="47" hits="12" branch="false"/>
+                                <line number="49" hits="12" branch="false"/>
+                                <line number="51" hits="12" branch="false"/>
+                                <line number="53" hits="12" branch="false"/>
+                                <line number="55" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getLinkLocation" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0">
+                            <lines>
+                                <line number="64" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReportFileName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="34" hits="36" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="numberOfColumns" signature="()I" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="41" hits="48" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="title" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="60" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="26" hits="72" branch="false"/>
+                        <line number="27" hits="72" branch="false"/>
+                        <line number="34" hits="36" branch="false"/>
+                        <line number="41" hits="48" branch="false"/>
+                        <line number="45" hits="48" branch="false"/>
+                        <line number="47" hits="12" branch="false"/>
+                        <line number="49" hits="12" branch="false"/>
+                        <line number="51" hits="12" branch="false"/>
+                        <line number="53" hits="12" branch="false"/>
+                        <line number="55" hits="0" branch="false"/>
+                        <line number="60" hits="12" branch="false"/>
+                        <line number="64" hits="0" branch="false"/>
+                    </lines>
+                </class>
+            </classes>
+        </package>
+        <package name="com.xebia.mojo.dashboard.reports.xml" line-rate="0.9642857142857143" branch-rate="1.0" complexity="2.6206896551724137">
+            <classes>
+                <class name="com.xebia.mojo.dashboard.reports.xml.CoberturaDashboardReport" filename="com/xebia/mojo/dashboard/reports/xml/CoberturaDashboardReport.java" line-rate="0.96" branch-rate="1.0" complexity="1.75">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="22" hits="108" branch="false"/>
+                                <line number="24" hits="54" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="canExecute" signature="(Lorg/apache/maven/project/MavenProject;)Z" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="31" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="coverage" signature="(Lorg/apache/maven/project/MavenProject;)Ljava/math/BigDecimal;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="61" hits="12" branch="false"/>
+                                <line number="63" hits="12" branch="false"/>
+                                <line number="64" hits="12" branch="false"/>
+                                <line number="65" hits="12" branch="false"/>
+                                <line number="67" hits="12" branch="false"/>
+                                <line number="68" hits="5208" branch="true"/>
+                                <line number="69" hits="5184" branch="false"/>
+                                <line number="70" hits="5184" branch="false"/>
+                                <line number="71" hits="5184" branch="true"/>
+                                <line number="72" hits="4302" branch="false"/>
+                                <line number="75" hits="12" branch="false"/>
+                                <line number="76" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getContent" signature="(Lorg/apache/maven/project/MavenProject;I)Lorg/dom4j/Node;" line-rate="0.6666666666666666" branch-rate="1.0">
+                            <lines>
+                                <line number="35" hits="6" branch="true"/>
+                                <line number="36" hits="6" branch="false"/>
+                                <line number="38" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getHeaderForColumn" signature="(I)Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="42" hits="18" branch="true"/>
+                                <line number="43" hits="12" branch="false"/>
+                                <line number="45" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getLinkLocation" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="49" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReportFileName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="27" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="numberOfColumns" signature="()I" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="53" hits="30" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="title" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="57" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="22" hits="108" branch="false"/>
+                        <line number="24" hits="54" branch="false"/>
+                        <line number="27" hits="12" branch="false"/>
+                        <line number="31" hits="6" branch="false"/>
+                        <line number="35" hits="6" branch="true"/>
+                        <line number="36" hits="6" branch="false"/>
+                        <line number="38" hits="0" branch="false"/>
+                        <line number="42" hits="18" branch="true"/>
+                        <line number="43" hits="12" branch="false"/>
+                        <line number="45" hits="6" branch="false"/>
+                        <line number="49" hits="6" branch="false"/>
+                        <line number="53" hits="30" branch="false"/>
+                        <line number="57" hits="12" branch="false"/>
+                        <line number="61" hits="12" branch="false"/>
+                        <line number="63" hits="12" branch="false"/>
+                        <line number="64" hits="12" branch="false"/>
+                        <line number="65" hits="12" branch="false"/>
+                        <line number="67" hits="12" branch="false"/>
+                        <line number="68" hits="5208" branch="true"/>
+                        <line number="69" hits="5184" branch="false"/>
+                        <line number="70" hits="5184" branch="false"/>
+                        <line number="71" hits="5184" branch="true"/>
+                        <line number="72" hits="4302" branch="false"/>
+                        <line number="75" hits="12" branch="false"/>
+                        <line number="76" hits="12" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.reports.xml.JDependDashboardReport" filename="com/xebia/mojo/dashboard/reports/xml/JDependDashboardReport.java" line-rate="0.9705882352941176" branch-rate="1.0" complexity="3.7142857142857144">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="13" hits="216" branch="false"/>
+                                <line number="15" hits="108" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="canExecute" signature="(Lorg/apache/maven/project/MavenProject;)Z" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="22" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getContent" signature="(Lorg/apache/maven/project/MavenProject;I)Lorg/dom4j/Node;" line-rate="0.9473684210526315" branch-rate="1.0">
+                            <lines>
+                                <line number="27" hits="36" branch="false"/>
+                                <line number="29" hits="36" branch="false"/>
+                                <line number="31" hits="6" branch="false"/>
+                                <line number="32" hits="6" branch="false"/>
+                                <line number="34" hits="6" branch="false"/>
+                                <line number="35" hits="6" branch="false"/>
+                                <line number="37" hits="6" branch="false"/>
+                                <line number="38" hits="6" branch="false"/>
+                                <line number="40" hits="6" branch="false"/>
+                                <line number="41" hits="6" branch="false"/>
+                                <line number="43" hits="6" branch="false"/>
+                                <line number="44" hits="6" branch="false"/>
+                                <line number="46" hits="6" branch="false"/>
+                                <line number="47" hits="6" branch="false"/>
+                                <line number="49" hits="0" branch="false"/>
+                                <line number="52" hits="36" branch="false"/>
+                                <line number="53" hits="36" branch="false"/>
+                                <line number="54" hits="36" branch="false"/>
+                                <line number="55" hits="36" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getHeaderForColumn" signature="(I)Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="60" hits="78" branch="false"/>
+                                <line number="62" hits="12" branch="false"/>
+                                <line number="64" hits="12" branch="false"/>
+                                <line number="66" hits="12" branch="false"/>
+                                <line number="68" hits="12" branch="false"/>
+                                <line number="70" hits="12" branch="false"/>
+                                <line number="72" hits="12" branch="false"/>
+                                <line number="74" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getLinkLocation" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="79" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReportFileName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="18" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="numberOfColumns" signature="()I" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="83" hits="60" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="title" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="87" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="13" hits="216" branch="false"/>
+                        <line number="15" hits="108" branch="false"/>
+                        <line number="18" hits="12" branch="false"/>
+                        <line number="22" hits="6" branch="false"/>
+                        <line number="27" hits="36" branch="false"/>
+                        <line number="29" hits="36" branch="false"/>
+                        <line number="31" hits="6" branch="false"/>
+                        <line number="32" hits="6" branch="false"/>
+                        <line number="34" hits="6" branch="false"/>
+                        <line number="35" hits="6" branch="false"/>
+                        <line number="37" hits="6" branch="false"/>
+                        <line number="38" hits="6" branch="false"/>
+                        <line number="40" hits="6" branch="false"/>
+                        <line number="41" hits="6" branch="false"/>
+                        <line number="43" hits="6" branch="false"/>
+                        <line number="44" hits="6" branch="false"/>
+                        <line number="46" hits="6" branch="false"/>
+                        <line number="47" hits="6" branch="false"/>
+                        <line number="49" hits="0" branch="false"/>
+                        <line number="52" hits="36" branch="false"/>
+                        <line number="53" hits="36" branch="false"/>
+                        <line number="54" hits="36" branch="false"/>
+                        <line number="55" hits="36" branch="false"/>
+                        <line number="60" hits="78" branch="false"/>
+                        <line number="62" hits="12" branch="false"/>
+                        <line number="64" hits="12" branch="false"/>
+                        <line number="66" hits="12" branch="false"/>
+                        <line number="68" hits="12" branch="false"/>
+                        <line number="70" hits="12" branch="false"/>
+                        <line number="72" hits="12" branch="false"/>
+                        <line number="74" hits="6" branch="false"/>
+                        <line number="79" hits="6" branch="false"/>
+                        <line number="83" hits="60" branch="false"/>
+                        <line number="87" hits="12" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.reports.xml.NcssDashboardReport" filename="com/xebia/mojo/dashboard/reports/xml/NcssDashboardReport.java" line-rate="0.9354838709677419" branch-rate="1.0" complexity="3.142857142857143">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="20" hits="72" branch="false"/>
+                                <line number="22" hits="36" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="canExecute" signature="(Lorg/apache/maven/project/MavenProject;)Z" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="34" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getContent" signature="(Lorg/apache/maven/project/MavenProject;I)Lorg/dom4j/Node;" line-rate="0.9411764705882353" branch-rate="1.0">
+                            <lines>
+                                <line number="42" hits="30" branch="false"/>
+                                <line number="43" hits="30" branch="false"/>
+                                <line number="45" hits="30" branch="false"/>
+                                <line number="47" hits="6" branch="false"/>
+                                <line number="48" hits="6" branch="false"/>
+                                <line number="49" hits="6" branch="false"/>
+                                <line number="50" hits="6" branch="false"/>
+                                <line number="52" hits="6" branch="false"/>
+                                <line number="53" hits="6" branch="false"/>
+                                <line number="55" hits="6" branch="false"/>
+                                <line number="56" hits="6" branch="false"/>
+                                <line number="58" hits="6" branch="false"/>
+                                <line number="59" hits="6" branch="false"/>
+                                <line number="61" hits="6" branch="false"/>
+                                <line number="62" hits="6" branch="false"/>
+                                <line number="64" hits="0" branch="false"/>
+                                <line number="67" hits="30" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getHeaderForColumn" signature="(I)Ljava/lang/String;" line-rate="0.8571428571428571" branch-rate="1.0">
+                            <lines>
+                                <line number="74" hits="60" branch="false"/>
+                                <line number="76" hits="12" branch="false"/>
+                                <line number="78" hits="12" branch="false"/>
+                                <line number="80" hits="12" branch="false"/>
+                                <line number="82" hits="12" branch="false"/>
+                                <line number="84" hits="12" branch="false"/>
+                                <line number="86" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getLinkLocation" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="94" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReportFileName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="27" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="numberOfColumns" signature="()I" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="101" hits="54" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="title" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="108" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="20" hits="72" branch="false"/>
+                        <line number="22" hits="36" branch="false"/>
+                        <line number="27" hits="6" branch="false"/>
+                        <line number="34" hits="12" branch="false"/>
+                        <line number="42" hits="30" branch="false"/>
+                        <line number="43" hits="30" branch="false"/>
+                        <line number="45" hits="30" branch="false"/>
+                        <line number="47" hits="6" branch="false"/>
+                        <line number="48" hits="6" branch="false"/>
+                        <line number="49" hits="6" branch="false"/>
+                        <line number="50" hits="6" branch="false"/>
+                        <line number="52" hits="6" branch="false"/>
+                        <line number="53" hits="6" branch="false"/>
+                        <line number="55" hits="6" branch="false"/>
+                        <line number="56" hits="6" branch="false"/>
+                        <line number="58" hits="6" branch="false"/>
+                        <line number="59" hits="6" branch="false"/>
+                        <line number="61" hits="6" branch="false"/>
+                        <line number="62" hits="6" branch="false"/>
+                        <line number="64" hits="0" branch="false"/>
+                        <line number="67" hits="30" branch="false"/>
+                        <line number="74" hits="60" branch="false"/>
+                        <line number="76" hits="12" branch="false"/>
+                        <line number="78" hits="12" branch="false"/>
+                        <line number="80" hits="12" branch="false"/>
+                        <line number="82" hits="12" branch="false"/>
+                        <line number="84" hits="12" branch="false"/>
+                        <line number="86" hits="0" branch="false"/>
+                        <line number="94" hits="6" branch="false"/>
+                        <line number="101" hits="54" branch="false"/>
+                        <line number="108" hits="6" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.reports.xml.PmdDashboardReport" filename="com/xebia/mojo/dashboard/reports/xml/PmdDashboardReport.java" line-rate="1.0" branch-rate="1.0" complexity="2.0">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="21" hits="72" branch="false"/>
+                                <line number="23" hits="36" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="canExecute" signature="(Lorg/apache/maven/project/MavenProject;)Z" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="30" hits="18" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getContent" signature="(Lorg/apache/maven/project/MavenProject;I)Lorg/dom4j/Node;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="34" hits="18" branch="false"/>
+                                <line number="36" hits="18" branch="false"/>
+                                <line number="38" hits="6" branch="false"/>
+                                <line number="39" hits="6" branch="false"/>
+                                <line number="41" hits="6" branch="false"/>
+                                <line number="42" hits="6" branch="false"/>
+                                <line number="44" hits="6" branch="false"/>
+                                <line number="47" hits="12" branch="false"/>
+                                <line number="48" hits="12" branch="false"/>
+                                <line number="49" hits="12" branch="false"/>
+                                <line number="50" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getHeaderForColumn" signature="(I)Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="54" hits="42" branch="false"/>
+                                <line number="56" hits="18" branch="false"/>
+                                <line number="58" hits="18" branch="false"/>
+                                <line number="60" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getLinkLocation" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="65" hits="6" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getReportFileName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="26" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="numberOfColumns" signature="()I" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="69" hits="66" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="title" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="73" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="21" hits="72" branch="false"/>
+                        <line number="23" hits="36" branch="false"/>
+                        <line number="26" hits="12" branch="false"/>
+                        <line number="30" hits="18" branch="false"/>
+                        <line number="34" hits="18" branch="false"/>
+                        <line number="36" hits="18" branch="false"/>
+                        <line number="38" hits="6" branch="false"/>
+                        <line number="39" hits="6" branch="false"/>
+                        <line number="41" hits="6" branch="false"/>
+                        <line number="42" hits="6" branch="false"/>
+                        <line number="44" hits="6" branch="false"/>
+                        <line number="47" hits="12" branch="false"/>
+                        <line number="48" hits="12" branch="false"/>
+                        <line number="49" hits="12" branch="false"/>
+                        <line number="50" hits="12" branch="false"/>
+                        <line number="54" hits="42" branch="false"/>
+                        <line number="56" hits="18" branch="false"/>
+                        <line number="58" hits="18" branch="false"/>
+                        <line number="60" hits="6" branch="false"/>
+                        <line number="65" hits="6" branch="false"/>
+                        <line number="69" hits="66" branch="false"/>
+                        <line number="73" hits="12" branch="false"/>
+                    </lines>
+                </class>
+            </classes>
+        </package>
+        <package name="com.xebia.mojo.dashboard.util" line-rate="0.5384615384615384" branch-rate="1.0" complexity="1.7333333333333334">
+            <classes>
+                <class name="com.xebia.mojo.dashboard.util.TidyXmlUtil" filename="com/xebia/mojo/dashboard/util/TidyXmlUtil.java" line-rate="0.5384615384615384" branch-rate="1.0" complexity="2.375">
+                    <methods>
+                        <method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="35" hits="546" branch="false"/>
+                                <line number="36" hits="546" branch="false"/>
+                                <line number="37" hits="546" branch="false"/>
+                                <line number="38" hits="546" branch="false"/>
+                                <line number="39" hits="546" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="findNode" signature="(Lorg/dom4j/Node;Ljava/lang/String;)Lorg/dom4j/Node;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="45" hits="48" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="findNodes" signature="(Lorg/dom4j/Node;Ljava/lang/String;)Ljava/util/List;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="52" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getChild" signature="(Lorg/dom4j/Node;I)Lorg/dom4j/Node;" line-rate="0.8" branch-rate="1.0">
+                            <lines>
+                                <line number="102" hits="12" branch="true"/>
+                                <line number="103" hits="12" branch="false"/>
+                                <line number="104" hits="12" branch="true"/>
+                                <line number="105" hits="12" branch="false"/>
+                                <line number="109" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="getFirstChild" signature="(Lorg/dom4j/Node;)Lorg/dom4j/Node;" line-rate="1.0" branch-rate="1.0">
+                            <lines>
+                                <line number="95" hits="12" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="readXhtmlDocument" signature="(Ljava/io/File;)Lorg/dom4j/Document;" line-rate="0.3333333333333333" branch-rate="1.0">
+                            <lines>
+                                <line number="74" hits="54" branch="false"/>
+                                <line number="75" hits="0" branch="false"/>
+                                <line number="76" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="readXmlDocument" signature="(Ljava/io/File;)Lorg/dom4j/Document;" line-rate="0.3333333333333333" branch-rate="1.0">
+                            <lines>
+                                <line number="85" hits="90" branch="false"/>
+                                <line number="86" hits="0" branch="false"/>
+                                <line number="87" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="writeDocument" signature="(Lorg/dom4j/Document;Ljava/io/File;)V" line-rate="0.0" branch-rate="1.0">
+                            <lines>
+                                <line number="60" hits="0" branch="false"/>
+                                <line number="61" hits="0" branch="false"/>
+                                <line number="62" hits="0" branch="false"/>
+                                <line number="63" hits="0" branch="false"/>
+                                <line number="64" hits="0" branch="false"/>
+                                <line number="65" hits="0" branch="false"/>
+                                <line number="67" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="35" hits="546" branch="false"/>
+                        <line number="36" hits="546" branch="false"/>
+                        <line number="37" hits="546" branch="false"/>
+                        <line number="38" hits="546" branch="false"/>
+                        <line number="39" hits="546" branch="false"/>
+                        <line number="45" hits="48" branch="false"/>
+                        <line number="52" hits="12" branch="false"/>
+                        <line number="60" hits="0" branch="false"/>
+                        <line number="61" hits="0" branch="false"/>
+                        <line number="62" hits="0" branch="false"/>
+                        <line number="63" hits="0" branch="false"/>
+                        <line number="64" hits="0" branch="false"/>
+                        <line number="65" hits="0" branch="false"/>
+                        <line number="67" hits="0" branch="false"/>
+                        <line number="74" hits="54" branch="false"/>
+                        <line number="75" hits="0" branch="false"/>
+                        <line number="76" hits="0" branch="false"/>
+                        <line number="85" hits="90" branch="false"/>
+                        <line number="86" hits="0" branch="false"/>
+                        <line number="87" hits="0" branch="false"/>
+                        <line number="95" hits="12" branch="false"/>
+                        <line number="102" hits="12" branch="true"/>
+                        <line number="103" hits="12" branch="false"/>
+                        <line number="104" hits="12" branch="true"/>
+                        <line number="105" hits="12" branch="false"/>
+                        <line number="109" hits="0" branch="false"/>
+                    </lines>
+                </class>
+                <class name="com.xebia.mojo.dashboard.util.XmlUtil" filename="com/xebia/mojo/dashboard/util/XmlUtil.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+                    <methods>
+                    </methods>
+                    <lines>
+                    </lines>
+                </class>
+            </classes>
+        </package>
+    </packages>
+</coverage>

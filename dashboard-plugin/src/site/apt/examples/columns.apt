@@ -1,0 +1,36 @@
+ ------
+ Standard reports and columns
+ ------
+ ------
+ ------
+
+Reports and their columns
+  
+  Each of the reports has a set of columns that can be enabled or disabled by configuring the dashboard as shown in {{{configuration.html}this}} page.
+  
+  In the table below, each of the currently supported reports is listed with the columns that it supports.
+  
+*------------------------------*-----------------------------------------------------------------------+
+| maven-surefire-report-plugin | tests,errors,failures,successrate                                     |
+*------------------------------*-----------------------------------------------------------------------+
+|     maven-clover-plugin      | percentage,bar                                                        |
+*------------------------------*-----------------------------------------------------------------------+
+|   maven-checkstyle-plugin    | files,infos,warnings,errors                                           |
+*------------------------------*-----------------------------------------------------------------------+
+|      maven-pmd-plugin        | files,violations                                                      |
+*------------------------------*-----------------------------------------------------------------------+
+|      maven-cpd-plugin        | violations                                                            |
+*------------------------------*-----------------------------------------------------------------------+
+|    javancss-maven-plugin     | packages,classes,functions,ncss,javadoc                               |
+*------------------------------*-----------------------------------------------------------------------+
+|    cobertura-maven-plugin    | linecoverage,branchcoverage,complexity                                |
+*------------------------------*-----------------------------------------------------------------------+
+|     maven-jdepend-plugin     | totalclasses,concreteclasses,abstractclasses,afferent,efferent,cycles |
+*------------------------------*-----------------------------------------------------------------------+
+|    findbugs-maven-plugin     | files,violations                                                      |
+*------------------------------*-----------------------------------------------------------------------+
+|    maven-changelog-plugin    | commits,changes                                                       |
+*------------------------------*-----------------------------------------------------------------------+
+|     taglist-maven-plugin     | tasks                                                                 |
+*------------------------------*-----------------------------------------------------------------------+
+  
