@@ -29,6 +29,8 @@
     </parent>
 
     <properties>
+        <topdir>${basedir}/..</topdir>
+
         <maven.test.error.ignore>true</maven.test.error.ignore>
         <maven.test.failure.ignore>true</maven.test.failure.ignore>
     </properties>

@@ -34,7 +34,9 @@
     </developers>
 
     <properties>
-        <checkstyle.header.file>etc/license/license.txt</checkstyle.header.file>
+        <checkstyle.header.file>${topdir}/etc/license/license.txt</checkstyle.header.file>
+        <checkstyle.config>${topdir}/etc/coding_standards.xml</checkstyle.config>
+        <checkstyle.suppressions>${topdir}/etc/coding_standards_suppressions.xml</checkstyle.suppressions>
     </properties>
 
     <distributionManagement>
@@ -95,7 +97,7 @@
     </dependencyManagement>
 
     <build>
-        <sourceDirectory>src/main</sourceDirectory>
+        <!--<sourceDirectory>src/main</sourceDirectory>-->
 
         <pluginManagement>
             <plugins>
@@ -141,7 +143,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <configuration>
-                    <configLocation>../mavenbuild/coding_standards.xml</configLocation>
+                    <configLocation>etc/coding_standards.xml</configLocation>
                 </configuration>
             </plugin>
 
@@ -149,12 +151,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
-            </plugin>
-
-            <!-- Generate report on changed files. -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-changelog-plugin</artifactId>
             </plugin>
 
             <!-- Generate the TODO lists. -->
