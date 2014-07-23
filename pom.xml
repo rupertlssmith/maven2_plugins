@@ -67,23 +67,8 @@
     </distributionManagement>
 
     <modules>
-        <!--<module>../xdoclet-maven-plugin</module>-->
-        <!--<module>../maven-antrun-plugin</module>-->
-        <module>../dashboard-plugin</module>
-        <module>../simian-report-maven-plugin</module>
+        <module>dashboard-plugin</module>
     </modules>
-
-    <repositories>
-        <!-- My local collection of jars. TODO: The hard coded path should be replaced with a relative one. -->
-        <!--
-        <repository>
-            <id>local.repo</id>
-            <name>Local Maven Repository</name>
-            <url>file:${basedir}/../../local_maven_repository</url>
-            <layout>legacy</layout>
-        </repository>
-        -->
-    </repositories>
 
     <dependencyManagement>
         <dependencies>

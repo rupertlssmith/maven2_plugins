@@ -13,21 +13,6 @@
         which is available in Maven1.
     </description>
 
-    <pluginRepositories>
-        <!--
-            <pluginRepository>
-            <id>codehaus-mojo</id>
-            <name>Codehaus Mojo Repository</name>
-            <url>http://repository.codehaus.org</url>
-            </pluginRepository>
-            <pluginRepository>
-            <id>xebia-mojo-snapshot-repo</id>
-            <name>Xebia MOJO Snapshot Repository</name>
-            <url>http://mojo.os.xebia.com/snapshot-repo/</url>
-            </pluginRepository>
-        -->
-    </pluginRepositories>
-
     <licenses>
         <license>
             <name>Apache License 2</name>
@@ -40,7 +25,7 @@
         <artifactId>maven2-plugins</artifactId>
         <groupId>uk.co.thebadgerset</groupId>
         <version>1.0</version>
-        <relativePath>../plugins/pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <properties>
