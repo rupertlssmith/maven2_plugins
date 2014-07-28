@@ -4,7 +4,7 @@
     <groupId>uk.co.thebadgerset</groupId>
     <artifactId>maven2-plugins</artifactId>
     <name>projects</name>
-    <version>1.0</version>
+    <version>0.3-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
