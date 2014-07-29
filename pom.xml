@@ -69,7 +69,7 @@
     </distributionManagement>
 
     <modules>
-        <module>dashboard-plugin</module>
+        <!--<module>dashboard-plugin</module>-->
     </modules>
 
     <dependencyManagement>
