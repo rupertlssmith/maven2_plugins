@@ -1,11 +1,11 @@
 /*
- * Copyright 2007 Xebia BV, the Netherlands.
+ * Copyright The Sett Ltd, 2005 to 2014.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -21,51 +21,64 @@ import junit.framework.TestCase;
 
 import org.apache.maven.project.MavenProject;
 
-
-public class ChangelogDashboardReportTest extends TestCase {
+public class ChangelogDashboardReportTest extends TestCase
+{
     private ChangelogDashboardReport changelogDashboardReport;
 
-    protected void setUp() throws Exception {
-        changelogDashboardReport = new ChangelogDashboardReport() {
-            protected File getReportFile(MavenProject project) {
-                return new File("src/test/resources/changelog.xml");
-            }
-        };
-    }
-
-    public void testShouldReturnLocationOfFindBugsXml() {
+    public void testShouldReturnLocationOfFindBugsXml()
+    {
         assertEquals("changelog.xml", changelogDashboardReport.getReportFileName());
     }
 
-    public void testShouldHaveTwoColumns() {
+    public void testShouldHaveTwoColumns()
+    {
         assertEquals(2, changelogDashboardReport.getColumnNames().size());
     }
 
-    public void testShouldHaveTitleFilesForFirstColumn() {
+    public void testShouldHaveTitleFilesForFirstColumn()
+    {
         assertEquals("Commits", changelogDashboardReport.getHeaderForColumn("commits"));
     }
 
-    public void testShouldHaveTitleViolationsForSecondColumn() {
+    public void testShouldHaveTitleViolationsForSecondColumn()
+    {
         assertEquals("Changed files", changelogDashboardReport.getHeaderForColumn("changes"));
     }
 
-    public void testShouldHaveFindBugsAsTitle() {
+    public void testShouldHaveFindBugsAsTitle()
+    {
         assertEquals("Changelog", changelogDashboardReport.title());
     }
 
-    public void testShouldLinkToFindBugsIndexPage() {
+    public void testShouldLinkToFindBugsIndexPage()
+    {
         assertEquals("changelog.html", changelogDashboardReport.getLinkLocation());
     }
 
-    public void testShouldHave25CommitsInExampleReport() throws Exception {
+    public void testShouldHave25CommitsInExampleReport() throws Exception
+    {
         assertEquals("25", changelogDashboardReport.getContent(null, "commits").getText());
     }
 
-    public void testShouldHave130ChangedFilesInExampleReport() throws Exception {
+    public void testShouldHave130ChangedFilesInExampleReport() throws Exception
+    {
         assertEquals("130", changelogDashboardReport.getContent(null, "changes").getText());
     }
 
-    public void testShouldExecuteOnCorrectFindBugsXMLFile() {
+    public void testShouldExecuteOnCorrectFindBugsXMLFile()
+    {
         assertTrue(changelogDashboardReport.canExecute(null));
+    }
+
+    protected void setUp() throws Exception
+    {
+        changelogDashboardReport =
+            new ChangelogDashboardReport()
+            {
+                protected File getReportFile(MavenProject project)
+                {
+                    return new File("src/test/resources/changelog.xml");
+                }
+            };
     }
 }

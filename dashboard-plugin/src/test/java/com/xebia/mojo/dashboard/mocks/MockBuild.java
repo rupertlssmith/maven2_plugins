@@ -1,11 +1,11 @@
 /*
- * Copyright 2007 Xebia BV, the Netherlands.
+ * Copyright The Sett Ltd, 2005 to 2014.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,25 +17,24 @@ package com.xebia.mojo.dashboard.mocks;
 
 import org.apache.maven.model.Build;
 
-
 /**
  * Mock implementation of the Maven Build object.
- *
  */
-public class MockBuild extends Build {
-    /**
-     *
-     */
+public class MockBuild extends Build
+{
+    /**  */
     private static final long serialVersionUID = 1L;
 
     private String directory;
 
-    public MockBuild(String dir) {
+    public MockBuild(String dir)
+    {
         super();
         this.directory = dir;
     }
 
-    public String getDirectory() {
+    public String getDirectory()
+    {
         return directory;
     }
 }

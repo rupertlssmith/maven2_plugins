@@ -1,11 +1,11 @@
 /*
- * Copyright 2007 Xebia BV, the Netherlands.
+ * Copyright The Sett Ltd, 2005 to 2014.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -23,14 +23,13 @@ import com.xebia.mojo.dashboard.reports.AbstractDashboardReportTester;
 import com.xebia.mojo.dashboard.util.TidyXmlUtil;
 import com.xebia.mojo.dashboard.util.XmlUtil;
 
-
 /**
  * Test class for the {@link TaglistDashboardReport}.
  *
  * @author jeroen
- *
  */
-public class TaglistDashboardReportTest extends AbstractDashboardReportTester {
+public class TaglistDashboardReportTest extends AbstractDashboardReportTester
+{
     private TaglistDashboardReport report;
 
     private MockReporting reporting;
@@ -41,36 +40,43 @@ public class TaglistDashboardReportTest extends AbstractDashboardReportTester {
 
     private File testFile;
 
-    protected void setUp() throws Exception {
+    public void testShouldHaveCorrectReportFileName()
+    {
+        assertEquals("taglist.html", report.getReportFileName());
+    }
+
+    public void testShouldHaveOneColumn()
+    {
+        assertEquals(1, report.getColumnNames().size());
+    }
+
+    public void testShouldHaveTasksAsTitleForFirstColumn()
+    {
+        assertEquals("Tasks", report.getHeaderForColumn(0));
+    }
+
+    public void testShouldHaveTaglistAsReportTitle()
+    {
+        assertEquals("Taglist", report.title());
+    }
+
+    public void testShouldHaveCorrectLinkLocation()
+    {
+        assertEquals("taglist.html", report.getLinkLocation());
+    }
+
+    public void testShouldHave2Tasks() throws Exception
+    {
+        assertEquals("2", report.getContent(mavenProject, 0).getText());
+    }
+
+    protected void setUp() throws Exception
+    {
         testFile = new File(this.getClass().getResource("/taglist.html").getPath());
 
         reporting = new MockReporting();
         mavenProject = new MockMavenProject(getBaseDir(testFile), reporting, null);
 
         report = new TaglistDashboardReport();
-    }
-
-    public void testShouldHaveCorrectReportFileName() {
-        assertEquals("taglist.html", report.getReportFileName());
-    }
-
-    public void testShouldHaveOneColumn() {
-        assertEquals(1, report.getColumnNames().size());
-    }
-
-    public void testShouldHaveTasksAsTitleForFirstColumn() {
-        assertEquals("Tasks", report.getHeaderForColumn(0));
-    }
-
-    public void testShouldHaveTaglistAsReportTitle() {
-        assertEquals("Taglist", report.title());
-    }
-
-    public void testShouldHaveCorrectLinkLocation() {
-        assertEquals("taglist.html", report.getLinkLocation());
-    }
-
-    public void testShouldHave2Tasks() throws Exception {
-        assertEquals("2", report.getContent(mavenProject, 0).getText());
     }
 }

@@ -1,11 +1,11 @@
 /*
- * Copyright 2007 Xebia BV, the Netherlands.
+ * Copyright The Sett Ltd, 2005 to 2014.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -25,43 +25,17 @@ import org.apache.maven.reporting.AbstractMavenReport;
 import org.apache.maven.reporting.AbstractMavenReportRenderer;
 import org.apache.maven.reporting.MavenReportException;
 
-
 /**
  * Report that will generate a page to be used by the DashboardMojo in a later stage.
- * 
- * @goal report
- * 
+ *
  * @author <a href="mailto:mwinkels@xebia.com">Maarten Winkels</a>
+ * @goal   report
  */
-public class MavenDashboardReport extends AbstractMavenReport {
-
-    /**
-     * Renders the dashboard report page.
-     */
-    private final class MyRenderer extends AbstractMavenReportRenderer {
-        private final Locale locale;
-
-        private MyRenderer(Sink sink, Locale locale) {
-            super(sink);
-            this.locale = locale;
-        }
-
-        public String getTitle() {
-            return getBundle(locale).getString("title");
-        }
-
-        protected void renderBody() {
-            startSection("Dashboard");
-            startTable();
-            tableCell("This should be replaced when dashboard is created.");
-            endTable();
-            endSection();
-        }
-    }
-
+public class MavenDashboardReport extends AbstractMavenReport
+{
     /**
      * <i>Maven Internal</i>: The Project descriptor.
-     * 
+     *
      * @parameter expression="${project}"
      * @required
      * @readonly
@@ -70,50 +44,89 @@ public class MavenDashboardReport extends AbstractMavenReport {
 
     /**
      * <i>Maven Internal</i>: The Doxia Site Renderer.
-     * 
+     *
      * @component
      */
     private Renderer siteRenderer;
 
     private ResourceBundle bundle;
 
-    protected void executeReport(Locale locale) throws MavenReportException {
-        new MyRenderer(getSink(), locale).render();
-    }
-
-    protected String getOutputDirectory() {
-        return getReportOutputDirectory().getAbsolutePath();
-    }
-
-    protected MavenProject getProject() {
-        return project;
-    }
-
-    protected Renderer getSiteRenderer() {
-        return siteRenderer;
-    }
-
-    public String getDescription(Locale locale) {
+    public String getDescription(Locale locale)
+    {
         return getBundle(locale).getString("description");
     }
 
-    public String getName(Locale locale) {
+    public String getName(Locale locale)
+    {
         return getBundle(locale).getString("name");
     }
 
-    private ResourceBundle getBundle(Locale locale) {
-        if (bundle == null) {
-            bundle = ResourceBundle.getBundle("dashboard", locale);
-        }
-        return bundle;
-    }
-
-    public boolean canGenerateReport() {
+    public boolean canGenerateReport()
+    {
         return project.isExecutionRoot();
     }
 
-    public String getOutputName() {
+    public String getOutputName()
+    {
         return "maven-dashboard-report";
+    }
+
+    protected void executeReport(Locale locale) throws MavenReportException
+    {
+        new MyRenderer(getSink(), locale).render();
+    }
+
+    protected String getOutputDirectory()
+    {
+        return getReportOutputDirectory().getAbsolutePath();
+    }
+
+    protected MavenProject getProject()
+    {
+        return project;
+    }
+
+    protected Renderer getSiteRenderer()
+    {
+        return siteRenderer;
+    }
+
+    private ResourceBundle getBundle(Locale locale)
+    {
+        if (bundle == null)
+        {
+            bundle = ResourceBundle.getBundle("dashboard", locale);
+        }
+
+        return bundle;
+    }
+
+    /**
+     * Renders the dashboard report page.
+     */
+    private final class MyRenderer extends AbstractMavenReportRenderer
+    {
+        private final Locale locale;
+
+        private MyRenderer(Sink sink, Locale locale)
+        {
+            super(sink);
+            this.locale = locale;
+        }
+
+        public String getTitle()
+        {
+            return getBundle(locale).getString("title");
+        }
+
+        protected void renderBody()
+        {
+            startSection("Dashboard");
+            startTable();
+            tableCell("This should be replaced when dashboard is created.");
+            endTable();
+            endSection();
+        }
     }
 
 }

@@ -1,12 +1,11 @@
-/* Copyright Rupert Smith, 2005 to 2008, all rights reserved. */
 /*
- * Copyright 2007 Xebia BV, the Netherlands.
+ * Copyright The Sett Ltd, 2005 to 2014.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -36,15 +35,13 @@ import org.dom4j.Element;
 import org.dom4j.Node;
 
 /**
- * This is the main goal of the dashboard plugin. It reads in an XHTML table and adds the
- * dashboard report table to it.
+ * This is the main goal of the dashboard plugin. It reads in an XHTML table and adds the dashboard report table to it.
  *
- * @goal dashboard
+ * @author     <a href="mailto:mwinkels@xebia.com">Maarten Winkels</a>
+ * @author     <a href="mailto:lvonk@xebia.com">Lars Vonk</a>
+ * @author     <a href="mailto:jvanerp@xebia.com">Jeroen van Erp</a>
+ * @goal       dashboard
  * @aggregator
- *
- * @author <a href="mailto:mwinkels@xebia.com">Maarten Winkels</a>
- * @author <a href="mailto:lvonk@xebia.com">Lars Vonk</a>
- * @author <a href="mailto:jvanerp@xebia.com">Jeroen van Erp</a>
  */
 public class DashboardMojo extends AbstractMojo
 {
@@ -57,8 +54,8 @@ public class DashboardMojo extends AbstractMojo
     private File destinationFile;
 
     /**
-     * The xpath expression of node in the destinationFile where the dashboard table will be
-     * generated in. A section will be added to this node, containing a table with the statistics.
+     * The xpath expression of node in the destinationFile where the dashboard table will be generated in. A section
+     * will be added to this node, containing a table with the statistics.
      *
      * @parameter expression="//div[@id='contentBox']"
      * @required
@@ -66,18 +63,18 @@ public class DashboardMojo extends AbstractMojo
     private String xpathToDestinationNode;
 
     /**
-     * The reports to generate. This is a list of report aliases or full class names. The aliases
-     * are generally the same as the plugin artifactId for the plugin that generates the report, eg:
-     * maven-clover-plugin for the Clover report and findbugs-maven-plugin for the FindBugs report.
-     * The known aliases are configured in the reports.properties file.
+     * The reports to generate. This is a list of report aliases or full class names. The aliases are generally the same
+     * as the plugin artifactId for the plugin that generates the report, eg: maven-clover-plugin for the Clover report
+     * and findbugs-maven-plugin for the FindBugs report. The known aliases are configured in the reports.properties
+     * file.
      *
      * @parameter
      */
     private String[] reports;
 
     /**
-     * The columns to generate per report. This is a mapping from report (by report alias or full
-     * class name) to comma separated column indexes.
+     * The columns to generate per report. This is a mapping from report (by report alias or full class name) to comma
+     * separated column indexes.
      *
      * @parameter
      */
@@ -93,9 +90,8 @@ public class DashboardMojo extends AbstractMojo
     private MavenProject project;
 
     /**
-     * Holds the parsed config for this mojo. This is a map from {@link DashboardReport} instance to
-     * {@link List}. The list might be null. If it is not, it contains {@link Integer}s that are
-     * the numbers of the columns shown.
+     * Holds the parsed config for this mojo. This is a map from {@link DashboardReport} instance to {@link List}. The
+     * list might be null. If it is not, it contains {@link Integer}s that are the numbers of the columns shown.
      */
     private Map config = new LinkedHashMap();
 
@@ -104,8 +100,8 @@ public class DashboardMojo extends AbstractMojo
     private Map reportNames;
 
     /**
-     * Default constructor of the {@link DashboardMojo} plugin goal. Upon creation it scans all the names of all
-     * of the default reports packaged with the plugin.
+     * Default constructor of the {@link DashboardMojo} plugin goal. Upon creation it scans all the names of all of the
+     * default reports packaged with the plugin.
      *
      * @throws MojoExecutionException If the reports.properties file cannot be found in the JAR package.
      */
@@ -405,8 +401,8 @@ public class DashboardMojo extends AbstractMojo
     }
 
     /**
-     * Class that iterates over all columns in a report that are enabled, and calls the {@link ReportColumnCallback}
-     * for each of them.
+     * Class that iterates over all columns in a report that are enabled, and calls the {@link ReportColumnCallback} for
+     * each of them.
      */
     private final class ColumnsReportCallback implements ReportCallback
     {

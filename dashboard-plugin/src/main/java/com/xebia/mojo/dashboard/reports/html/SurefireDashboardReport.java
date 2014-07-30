@@ -1,12 +1,11 @@
-/* Copyright Rupert Smith, 2005 to 2008, all rights reserved. */
 /*
- * Copyright 2007 Xebia BV, the Netherlands.
+ * Copyright The Sett Ltd, 2005 to 2014.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,18 +15,14 @@
  */
 package com.xebia.mojo.dashboard.reports.html;
 
-import java.text.NumberFormat;
-import java.text.ParseException;
 import java.util.Arrays;
 import java.util.List;
 
 import com.xebia.mojo.dashboard.reports.HtmlFileXPathReport;
-import com.xebia.mojo.dashboard.util.HtmlUtil;
 import com.xebia.mojo.dashboard.util.XmlUtil;
 
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.project.MavenProject;
-import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.Node;
 
@@ -38,9 +33,7 @@ public class SurefireDashboardReport extends HtmlFileXPathReport
 {
     private static final String RESULT_ROW = "//div[@id='contentBox']/div[2]/table[1]/tr[2]/";
 
-    /**
-     * Surefire report file.
-     */
+    /** Surefire report file. */
     private static final String SUREFIRE_REPORT_HTML = "surefire-report.html";
 
     private static final String XPATH_NUMBER_OF_TESTS = RESULT_ROW + "td[1]/text()";
@@ -63,17 +56,13 @@ public class SurefireDashboardReport extends HtmlFileXPathReport
             });
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    /** {@inheritDoc} */
     public List getColumnNames()
     {
         return COLUMN_NAMES;
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    /** {@inheritDoc} */
     public String getHeaderForColumn(int number)
     {
         switch (number)
@@ -95,25 +84,21 @@ public class SurefireDashboardReport extends HtmlFileXPathReport
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    /** {@inheritDoc} */
     public String title()
     {
         return "Surefire Test Report";
     }
 
-    /**
-     * {@inheritDoc}
-     */
+    /** {@inheritDoc} */
     public String getLinkLocation()
     {
         return "surefire-report.html";
     }
 
     /**
-     * Returns the filename where the content used for the dashboard is retrieved from. The file
-     * used is denoted by: {@link #SUREFIRE_REPORT_HTML} {@inheritDoc}
+     * Returns the filename where the content used for the dashboard is retrieved from. The file used is denoted by:
+     * {@link #SUREFIRE_REPORT_HTML} {@inheritDoc}
      */
     protected String getReportFileName()
     {
@@ -125,6 +110,7 @@ public class SurefireDashboardReport extends HtmlFileXPathReport
         if (column == 3) // Add red/green bar to sucess rate.
         {
             Element bar = JacocoDashboardReport.createPercentageBar(contentNode, 60);
+
             return bar;
         }
 

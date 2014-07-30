@@ -1,11 +1,11 @@
 /*
- * Copyright 2007 Xebia BV, the Netherlands.
+ * Copyright The Sett Ltd, 2005 to 2014.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -21,34 +21,37 @@ import org.apache.maven.model.Build;
 import org.apache.maven.model.Reporting;
 import org.apache.maven.project.MavenProject;
 
-
 /**
- * Mock class created for test purposes. This class allows to setup a mock maven project and results
- * can be retrieved for assertions.
+ * Mock class created for test purposes. This class allows to setup a mock maven project and results can be retrieved
+ * for assertions.
  */
-public class MockMavenProject extends MavenProject {
-
+public class MockMavenProject extends MavenProject
+{
     private Reporting reporting;
 
     private File baseDir;
 
     private Build build;
 
-    public MockMavenProject(File baseDir, Reporting reporting, Build build) {
+    public MockMavenProject(File baseDir, Reporting reporting, Build build)
+    {
         this.baseDir = baseDir;
         this.reporting = reporting;
         this.build = build;
     }
 
-    public File getBasedir() {
+    public File getBasedir()
+    {
         return baseDir;
     }
 
-    public Reporting getReporting() {
+    public Reporting getReporting()
+    {
         return reporting;
     }
 
-    public Build getBuild() {
+    public Build getBuild()
+    {
         return build;
     }
 }
