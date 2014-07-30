@@ -11,18 +11,6 @@
     <scm>
         <connection>scm:svn:https://junit-toolkit.svn.sourceforge.net/svnroot/junit-toolkit/trunk/maven2-plugins</connection>
     </scm>
-
-    <prerequisites>
-        <maven>2.0.4</maven>
-    </prerequisites>
-
-    <mailingLists>
-    </mailingLists>
-
-    <organization>
-        <name>The Badger Sett ltd.</name>
-        <url>http://www.thebadgersett.co.uk/</url>
-    </organization>
     
     <developers>
         <developer>
