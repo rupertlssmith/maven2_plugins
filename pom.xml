@@ -37,6 +37,11 @@
         <checkstyle.header.file>${topdir}/etc/license/license.txt</checkstyle.header.file>
         <checkstyle.config>${topdir}/etc/coding_standards.xml</checkstyle.config>
         <checkstyle.suppressions>${topdir}/etc/coding_standards_suppressions.xml</checkstyle.suppressions>
+
+        <!-- Plugin versions. Attempting to standardize this for more repeatable builds. -->
+        <maven.compiler.plugin.version>2.0.1</maven.compiler.plugin.version>
+        <maven.plugin.plugin.version>2.2</maven.plugin.plugin.version>
+
     </properties>
 
     <distributionManagement>
@@ -69,7 +74,7 @@
     </distributionManagement>
 
     <modules>
-        <!--<module>dashboard-plugin</module>-->
+        <module>dashboard-plugin</module>
     </modules>
 
     <dependencyManagement>
@@ -143,12 +148,18 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>2.0.1</version>
+                    <version>${maven.compiler.plugin.version}</version>
                     <configuration>
                         <source>1.5</source>
                         <target>1.5</target>
                         <fork>false</fork>
                     </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-plugin-plugin</artifactId>
+                    <version>${maven.plugin.plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
