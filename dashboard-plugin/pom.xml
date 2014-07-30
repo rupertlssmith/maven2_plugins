@@ -3,27 +3,29 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.xebia.mojo</groupId>
+    
+    <groupId>com.thesett</groupId>
     <artifactId>dashboard-maven-plugin</artifactId>
-    <packaging>maven-plugin</packaging>
     <version>0.9-SNAPSHOT</version> <!-- maven2_plugins.version -->
+    
     <name>Dashboard Plugin for Maven 2</name>
     <description>
         This plugin provides a Dashboard for a Maven2 site. This dashboard closely resembles the one
         which is available in Maven1.
     </description>
 
+    <packaging>maven-plugin</packaging>
+    
     <licenses>
         <license>
             <name>Apache License 2</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
         </license>
     </licenses>
 
     <parent>
         <artifactId>maven2-plugins</artifactId>
-        <groupId>uk.co.thebadgerset</groupId>
+        <groupId>com.thesett</groupId>
         <version>0.9-SNAPSHOT</version> <!-- maven2_plugins.version -->
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -39,64 +41,55 @@
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-plugin-api</artifactId>
-            <version>2.0.7</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-project</artifactId>
-            <version>2.0.7</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.reporting</groupId>
-            <artifactId>maven-reporting-api</artifactId>
-            <version>2.0.7</version>
+            <artifactId>maven-reporting-api</artifactId>            
         </dependency>
         <dependency>
             <groupId>org.apache.maven.reporting</groupId>
-            <artifactId>maven-reporting-impl</artifactId>
-            <version>2.0.4</version>
+            <artifactId>maven-reporting-impl</artifactId>            
         </dependency>
+        
         <dependency>
             <groupId>jtidy</groupId>
-            <artifactId>jtidy</artifactId>
-            <version>4aug2000r7-dev</version>
+            <artifactId>jtidy</artifactId>            
         </dependency>
         <dependency>
             <groupId>dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
+            <artifactId>dom4j</artifactId>            
         </dependency>
         <dependency>
             <groupId>jaxen</groupId>
-            <artifactId>jaxen</artifactId>
-            <version>1.1.1</version>
+            <artifactId>jaxen</artifactId>            
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>1.2</version>
+            <artifactId>commons-io</artifactId>            
         </dependency>
         <dependency>
             <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <artifactId>junit</artifactId>            
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.easymock</groupId>
-            <artifactId>easymock</artifactId>
-            <version>2.2</version>
+            <artifactId>easymock</artifactId>            
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.shared</groupId>
-            <artifactId>maven-plugin-testing-harness</artifactId>
-            <version>1.0</version>
+            <artifactId>maven-plugin-testing-harness</artifactId>            
             <scope>test</scope>
         </dependency>
     </dependencies>
 
     <build>
+        <!--
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -120,5 +113,6 @@
                 </executions>
             </plugin>
         </plugins>
+        -->
     </build>
 </project>
