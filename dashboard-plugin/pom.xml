@@ -6,7 +6,7 @@
     
     <groupId>com.thesett</groupId>
     <artifactId>dashboard-maven-plugin</artifactId>
-    <version>0.8.1</version> <!-- maven2_plugins.version -->
+    <version>0.8.2</version> <!-- maven2_plugins.version -->
     
     <name>Dashboard Plugin for Maven 2</name>
     <description>
@@ -26,7 +26,7 @@
     <parent>
         <artifactId>maven2-plugins</artifactId>
         <groupId>com.thesett</groupId>
-        <version>0.8.1</version> <!-- maven2_plugins.version -->
+        <version>0.8.2</version> <!-- maven2_plugins.version -->
         <relativePath>../pom.xml</relativePath>
     </parent>
 
