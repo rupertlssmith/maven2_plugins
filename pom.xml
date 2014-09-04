@@ -9,194 +9,30 @@
     <packaging>pom</packaging>
 
     <scm>
-        <connection>scm:svn:https://junit-toolkit.svn.sourceforge.net/svnroot/junit-toolkit/trunk/maven2-plugins</connection>
+        <connection>scm:git:https://github.com/rupertlssmith/maven2_plugins.git</connection>
+        <url>https://github.com/rupertlssmith/maven2_plugins</url>
     </scm>
-    
-    <developers>
-        <developer>
-            <name>Rupert Smith</name>
-            <id>rupertlssmith</id>
-            <email>rupertlssmith (contactable on g-m-a-i-l)</email>
-            <organization />
-        </developer>
-    </developers>
-
-    <properties>
-        <checkstyle.header.file>${topdir}/etc/license/license.txt</checkstyle.header.file>
-        <checkstyle.config>${topdir}/etc/coding_standards.xml</checkstyle.config>
-        <checkstyle.suppressions>${topdir}/etc/coding_standards_suppressions.xml</checkstyle.suppressions>
-
-        <!-- Plugin versions. Attempting to standardize this for more repeatable builds. -->
-        <maven.compiler.plugin.version>2.0.1</maven.compiler.plugin.version>
-        <maven.plugin.plugin.version>2.2</maven.plugin.plugin.version>
-
-    </properties>
 
     <distributionManagement>
-
-        <!-- The repository for fully versioned releases. -->
-        <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>release-repo</id>
-            <name>The Badger Set Maven2 Repository</name>
-            <url>file://${basedir}/../../releases</url>
-            <layout>default</layout>
-        </repository>
-
-        <!-- The repository for snapshot releases. -->
         <snapshotRepository>
-            <uniqueVersion>true</uniqueVersion>
-            <id>snapshot-repo</id>
-            <name>The Badger Set Maven2 Snapshot Repository</name>
-            <url>file://${basedir}/../../snapshots</url>
-            <layout>default</layout>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
 
         <!-- Set up for locally generated site. -->
         <site>
-            <id>junit-toolkit-site</id>
-            <name>JUnit Toolkit</name>
-            <url>file:/temp</url>
+            <id>All_Projects_Site</id>
+            <name>All Projects Site</name>
+            <url>file:/var/www/build_reports/jenerator</url>
         </site>
-
-    </distributionManagement>
+    </distributionManagement>    
 
     <modules>
         <module>dashboard-plugin</module>
     </modules>
-
-    <dependencyManagement>
-        <dependencies>
-            
-            <dependency>
-                <groupId>org.apache.maven</groupId>
-                <artifactId>maven-plugin-api</artifactId>
-                <version>2.0.4</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven</groupId>
-                <artifactId>maven-project</artifactId>
-                <version>2.0.7</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven.reporting</groupId>
-                <artifactId>maven-reporting-api</artifactId>
-                <version>2.0.7</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven.reporting</groupId>
-                <artifactId>maven-reporting-impl</artifactId>
-                <version>2.0.4</version>
-            </dependency>
-            
-            <dependency>
-                <groupId>jtidy</groupId>
-                <artifactId>jtidy</artifactId>
-                <version>4aug2000r7-dev</version>
-            </dependency>
-            <dependency>
-                <groupId>dom4j</groupId>
-                <artifactId>dom4j</artifactId>
-                <version>1.6.1</version>
-            </dependency>
-            <dependency>
-                <groupId>jaxen</groupId>
-                <artifactId>jaxen</artifactId>
-                <version>1.1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>1.2</version>
-            </dependency>
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>3.8.1</version>            
-            </dependency>
-            <dependency>
-                <groupId>org.easymock</groupId>
-                <artifactId>easymock</artifactId>
-                <version>2.2</version>            
-            </dependency>
-            <dependency>
-                <groupId>org.apache.maven.shared</groupId>
-                <artifactId>maven-plugin-testing-harness</artifactId>
-                <version>1.0</version>            
-            </dependency>            
-        </dependencies>
-    </dependencyManagement>
-
-    <build>
-        <!--<sourceDirectory>src/main</sourceDirectory>-->
-
-        <pluginManagement>
-            <plugins>
-                <!-- Ensures the compiler plugin is set up for Java 1.5 -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${maven.compiler.plugin.version}</version>
-                    <configuration>
-                        <source>1.5</source>
-                        <target>1.5</target>
-                        <fork>false</fork>
-                    </configuration>
-                </plugin>
-
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-plugin-plugin</artifactId>
-                    <version>${maven.plugin.plugin.version}</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-
-    </build>
-
-    <reporting>
-        <plugins>
-
-            <!-- Run the PMD report. -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
-                <configuration>
-                    <linkXref>true</linkXref>
-                    <sourceEncoding>utf-8</sourceEncoding>
-                    <minimumTokens>50</minimumTokens>
-                    <targetJdk>1.5</targetJdk>
-                </configuration>
-            </plugin>
-
-            <!-- Run the javadoc report. -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-            </plugin>
-
-            <!-- Report on the checkstyle rules. -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <configuration>
-                    <configLocation>etc/coding_standards.xml</configLocation>
-                </configuration>
-            </plugin>
-
-            <!-- Generate the source code cross reference. -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jxr-plugin</artifactId>
-            </plugin>
-
-            <!-- Generate the TODO lists. -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>taglist-maven-plugin</artifactId>
-            </plugin>
-            
-        </plugins>
-    </reporting>
 
 </project>

@@ -23,96 +23,71 @@
         </license>
     </licenses>
 
-    <parent>
-        <artifactId>maven2-plugins</artifactId>
-        <groupId>com.thesett</groupId>
-        <version>0.8.3</version> <!-- maven2_plugins.version -->
-        <relativePath>../pom.xml</relativePath>
-    </parent>
-
     <properties>
-        <topdir>${basedir}/..</topdir>
-
         <maven.test.error.ignore>true</maven.test.error.ignore>
         <maven.test.failure.ignore>true</maven.test.failure.ignore>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-plugin-api</artifactId>
+            <version>2.0.4</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-project</artifactId>
+            <version>2.0.7</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.reporting</groupId>
-            <artifactId>maven-reporting-api</artifactId>            
+            <artifactId>maven-reporting-api</artifactId>
+            <version>2.0.7</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.reporting</groupId>
-            <artifactId>maven-reporting-impl</artifactId>            
-        </dependency>
-        
-        <dependency>
-            <groupId>jtidy</groupId>
-            <artifactId>jtidy</artifactId>            
+            <artifactId>maven-reporting-impl</artifactId>
+            <version>2.0.4</version>
         </dependency>
         <dependency>
             <groupId>dom4j</groupId>
-            <artifactId>dom4j</artifactId>            
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
         </dependency>
         <dependency>
-            <groupId>jaxen</groupId>
-            <artifactId>jaxen</artifactId>            
+            <groupId>jtidy</groupId>
+            <artifactId>jtidy</artifactId>
+            <version>4aug2000r7-dev</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>            
+            <artifactId>commons-io</artifactId>
+            <version>1.2</version>
+        </dependency>      
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+            <version>1.1.6</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
-            <artifactId>junit</artifactId>            
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.easymock</groupId>
-            <artifactId>easymock</artifactId>            
+            <artifactId>easymock</artifactId>
+            <version>2.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.shared</groupId>
-            <artifactId>maven-plugin-testing-harness</artifactId>            
+            <artifactId>maven-plugin-testing-harness</artifactId>
+            <version>1.0</version>
             <scope>test</scope>
         </dependency>
-    </dependencies>
 
-    <build>
-        <!--
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-plugin-plugin</artifactId>
-                <version>3.2</version>
-                <executions>
-                    <execution>
-                        <id>default-descriptor</id>
-                        <goals>
-                            <goal>descriptor</goal>
-                        </goals>
-                        <phase>process-classes</phase>
-                    </execution>
-                    <execution>
-                        <id>help-descriptor</id>
-                        <goals>
-                            <goal>helpmojo</goal>
-                        </goals>
-                        <phase>process-classes</phase>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-        -->
-    </build>
+    </dependencies>
 </project>
