@@ -13,8 +13,14 @@
         This plugin provides a Dashboard for a Maven2 site. This dashboard closely resembles the one
         which is available in Maven1.
     </description>
-
+    <url>https://github.com/rupertlssmith/maven2-plugins</url>
+    
     <packaging>maven-plugin</packaging>
+    
+    <scm>
+        <connection>scm:git:https://github.com/rupertlssmith/maven2_plugins.git</connection>
+        <url>https://github.com/rupertlssmith/maven2_plugins</url>
+    </scm>    
     
     <licenses>
         <license>
@@ -41,7 +47,17 @@
             <url>file:/var/www/build_reports/jenerator</url>
         </site>
     </distributionManagement>    
-    
+
+    <developers>
+        <developer>
+            <name>Rupert Smith</name>
+            <id>rupert</id>
+            <email>rupertgithub@badgerhouse.freeserve.co.uk</email>
+            <organization>The Sett Ltd.</organization>
+            <organizationUrl>http://www.thesett.com/</organizationUrl>
+        </developer>
+    </developers>
+
     <properties>
         <maven.test.error.ignore>true</maven.test.error.ignore>
         <maven.test.failure.ignore>true</maven.test.failure.ignore>
@@ -109,4 +125,57 @@
         </dependency>
 
     </dependencies>
+
+    <profiles>
+        <profile> 
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>2.2.1</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>2.9.1</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.5</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+    
 </project>
