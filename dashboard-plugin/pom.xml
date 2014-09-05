@@ -18,11 +18,30 @@
     
     <licenses>
         <license>
-            <name>Apache License 2</name>
+            <name>The Apache Software License, Version 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
         </license>
-    </licenses>
+    </licenses>    
+    
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
 
+        <!-- Set up for locally generated site. -->
+        <site>
+            <id>All_Projects_Site</id>
+            <name>All Projects Site</name>
+            <url>file:/var/www/build_reports/jenerator</url>
+        </site>
+    </distributionManagement>    
+    
     <properties>
         <maven.test.error.ignore>true</maven.test.error.ignore>
         <maven.test.failure.ignore>true</maven.test.failure.ignore>

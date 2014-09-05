@@ -13,6 +13,14 @@
         <url>https://github.com/rupertlssmith/maven2_plugins</url>
     </scm>
 
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>    
+    
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
