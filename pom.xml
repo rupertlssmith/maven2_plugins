@@ -3,7 +3,7 @@
 
     <groupId>com.thesett</groupId>
     <artifactId>maven2-plugins</artifactId>
-    <version>0.8.6-SNAPSHOT</version> <!-- maven2_plugins.version -->
+    <version>0.8.6</version> <!-- maven2_plugins.version -->
 
     <name>maven2-plugins</name>
     <description>Build pom for custom maven plugins.</description>
