@@ -8,7 +8,7 @@ if [ -z "$1" ] ; then
 fi
 
 echo New version is $1
-SEDCMD="s/<version>$CV<\/version><!-- maven2_plugins.version -->/<version>$1<\/version><!-- maven2_plugins.version -->/"
+SEDCMD="s/<version>$CV<\/version><!--maven2_plugins.version-->/<version>$1<\/version><!--maven2_plugins.version-->/"
 SEDCMDCV="s/$CV/$1/"
 
 find -L . -name 'pom.xml' | xargs sed -i $SEDCMD
