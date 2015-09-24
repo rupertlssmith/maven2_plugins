@@ -6,7 +6,7 @@
     
     <groupId>com.thesett</groupId>
     <artifactId>dashboard-maven-plugin</artifactId>
-    <version>0.8.18-SNAPSHOT</version><!--maven2_plugins.version-->
+    <version>0.8.18</version><!--maven2_plugins.version-->
     
     <name>Dashboard Plugin for Maven 2</name>
     <description>
