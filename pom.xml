@@ -5,7 +5,7 @@
     <artifactId>maven2-plugins</artifactId>
     <version>0.8.23-SNAPSHOT</version><!--maven2_plugins.version-->
 
-    <name>maven2-plugins</name>
+    <name>Maven Plugins</name>
     <description>Build pom for custom maven plugins.</description>
     <url>https://github.com/rupertlssmith/maven2-plugins</url>
     
