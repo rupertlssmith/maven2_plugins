@@ -42,7 +42,7 @@ import org.w3c.tidy.Tidy;
  */
 public class TidyXmlUtil implements XmlUtil
 {
-    private Tidy tidy;
+    private final Tidy tidy;
 
     public TidyXmlUtil()
     {

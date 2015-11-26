@@ -93,11 +93,11 @@ public class DashboardMojo extends AbstractMojo
      * Holds the parsed config for this mojo. This is a map from {@link DashboardReport} instance to {@link List}. The
      * list might be null. If it is not, it contains {@link Integer}s that are the numbers of the columns shown.
      */
-    private Map config = new LinkedHashMap();
+    private final Map config = new LinkedHashMap();
 
     private XmlUtil xmlUtil = new TidyXmlUtil();
 
-    private Map reportNames;
+    private final Map reportNames;
 
     /**
      * Default constructor of the {@link DashboardMojo} plugin goal. Upon creation it scans all the names of all of the
