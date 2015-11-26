@@ -26,6 +26,7 @@ import com.xebia.mojo.dashboard.DashboardReport;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.project.MavenProject;
 import org.dom4j.Document;
+import org.dom4j.Node;
 
 /**
  * Util class with convienence methods used by the dashboard and reports implementations.
@@ -69,7 +70,7 @@ public class DashboardUtil
      *
      * @return A String containing the result of the function.
      */
-    public static String executeXpathFunctionOnDocument(Document document, String xpath)
+    public static String executeXpathFunctionOnDocument(Node document, String xpath)
     {
         String value = null;
         Object o = document.selectObject(xpath);

@@ -88,7 +88,7 @@ public class TaglistDashboardReport extends HtmlFileXPathReport
 
         for (Iterator it = rows.iterator(); it.hasNext();)
         {
-            Element row = (Element) it.next();
+            Node row = (Element) it.next();
             List cells = row.selectNodes("td");
 
             if (!cells.isEmpty() && (cells.size() > 1))

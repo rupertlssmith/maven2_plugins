@@ -18,6 +18,7 @@ package com.xebia.mojo.dashboard;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -30,6 +31,7 @@ import com.xebia.mojo.dashboard.util.XmlUtil;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.project.MavenProject;
+import org.dom4j.Branch;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.Node;
@@ -224,7 +226,7 @@ public class DashboardMojo extends AbstractMojo
         }
     }
 
-    private void removePlaceHolder(Element dashboardTableDestination)
+    private void removePlaceHolder(Branch dashboardTableDestination)
     {
         Node node = dashboardTableDestination.selectSingleNode("div[@class='section']/h2[text()='Dashboard']");
 
@@ -262,7 +264,7 @@ public class DashboardMojo extends AbstractMojo
             {
                 public void handleReport(DashboardReport report)
                 {
-                    List columns = (List) config.get(report);
+                    Collection columns = (List) config.get(report);
 
                     if (columns != null)
                     {
@@ -289,7 +291,7 @@ public class DashboardMojo extends AbstractMojo
             });
     }
 
-    private Element newRow(Element dashboardTable, String header)
+    private Element newRow(Branch dashboardTable, String header)
     {
         Element firstRow = dashboardTable.addElement("tr");
         createTableHeaderCell(firstRow, header, 1);
@@ -297,7 +299,7 @@ public class DashboardMojo extends AbstractMojo
         return firstRow;
     }
 
-    private void createProjectRow(Element dashboardTable, final MavenProject subProject, int rowNum)
+    private void createProjectRow(Branch dashboardTable, final MavenProject subProject, int rowNum)
         throws MojoExecutionException
     {
         final Element tableRow = dashboardTable.addElement("tr");
@@ -358,7 +360,7 @@ public class DashboardMojo extends AbstractMojo
         return createTablePart(tableRow, "td", content);
     }
 
-    private Element createTablePart(Element tableRow, String type, String content)
+    private Element createTablePart(Branch tableRow, String type, String content)
     {
         Element element = tableRow.addElement(type);
 
@@ -370,14 +372,14 @@ public class DashboardMojo extends AbstractMojo
         return element;
     }
 
-    private void createLink(Element parent, String href, Node content)
+    private void createLink(Branch parent, String href, Node content)
     {
         Element link = parent.addElement("a");
         link.add(content);
         link.addAttribute("href", href);
     }
 
-    private void createLink(Element parent, String href, String content)
+    private void createLink(Branch parent, String href, String content)
     {
         Element link = parent.addElement("a");
         link.setText(content);
@@ -415,7 +417,7 @@ public class DashboardMojo extends AbstractMojo
 
         public void handleReport(DashboardReport report) throws MojoExecutionException
         {
-            List columns = (List) config.get(report);
+            Iterable columns = (List) config.get(report);
 
             if (columns == null)
             {

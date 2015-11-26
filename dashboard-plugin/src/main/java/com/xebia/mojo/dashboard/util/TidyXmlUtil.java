@@ -25,6 +25,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import org.apache.maven.plugin.MojoExecutionException;
+import org.dom4j.Branch;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
@@ -126,7 +127,7 @@ public class TidyXmlUtil implements XmlUtil
     {
         if (parent instanceof Element)
         {
-            Element parentElement = (Element) parent;
+            Branch parentElement = (Element) parent;
 
             if (parentElement.nodeCount() > index)
             {
