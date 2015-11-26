@@ -243,7 +243,7 @@ public class DashboardMojo extends AbstractMojo
         }
     }
 
-    private void doWithReports(final ReportColumnCallback callback) throws MojoExecutionException
+    private void doWithReports(ReportColumnCallback callback) throws MojoExecutionException
     {
         doWithReports(new ColumnsReportCallback(callback));
     }
