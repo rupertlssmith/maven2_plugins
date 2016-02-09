@@ -125,6 +125,24 @@
         </dependency>
 
     </dependencies>
+    
+    <build>
+        <pluginManagement>
+            <plugins>
+                
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <configuration>
+                        <includes>
+                            <include>com.thesett:*</include>
+                        </includes>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
 
     <profiles>
         <profile> 
